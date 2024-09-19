@@ -41679,6 +41679,49 @@ h6 {
   color: var(--bs-primary)
 }
 
+
+.btn-check:active+.btn.btn-active-theme-black,
+.btn-check:checked+.btn.btn-active-theme-black,
+.btn.btn-active-theme-black.active,
+.btn.btn-active-theme-black.show,
+.btn.btn-active-theme-black:active:not(.btn-active),
+.btn.btn-active-theme-black:focus:not(.btn-active),
+.btn.btn-active-theme-black:hover:not(.btn-active),
+.show>.btn.btn-active-theme-black {
+  color: var(--bs-theme-black);
+  border-color: var(--bs-theme-black-light);
+  background-color: var(--bs-theme-black-light) !important
+}
+
+.btn-check:active+.btn.btn-active-theme-black .svg-icon,
+.btn-check:active+.btn.btn-active-theme-black i,
+.btn-check:checked+.btn.btn-active-theme-black .svg-icon,
+.btn-check:checked+.btn.btn-active-theme-black i,
+.btn.btn-active-theme-black.active .svg-icon,
+.btn.btn-active-theme-black.active i,
+.btn.btn-active-theme-black.show .svg-icon,
+.btn.btn-active-theme-black.show i,
+.btn.btn-active-theme-black:active:not(.btn-active) .svg-icon,
+.btn.btn-active-theme-black:active:not(.btn-active) i,
+.btn.btn-active-theme-black:focus:not(.btn-active) .svg-icon,
+.btn.btn-active-theme-black:focus:not(.btn-active) i,
+.btn.btn-active-theme-black:hover:not(.btn-active) .svg-icon,
+.btn.btn-active-theme-black:hover:not(.btn-active) i,
+.show>.btn.btn-active-theme-black .svg-icon,
+.show>.btn.btn-active-theme-black i {
+  color: var(--bs-theme-black)
+}
+
+.btn-check:active+.btn.btn-active-theme-black.dropdown-toggle:after,
+.btn-check:checked+.btn.btn-active-theme-black.dropdown-toggle:after,
+.btn.btn-active-theme-black.active.dropdown-toggle:after,
+.btn.btn-active-theme-black.show.dropdown-toggle:after,
+.btn.btn-active-theme-black:active:not(.btn-active).dropdown-toggle:after,
+.btn.btn-active-theme-black:focus:not(.btn-active).dropdown-toggle:after,
+.btn.btn-active-theme-black:hover:not(.btn-active).dropdown-toggle:after,
+.show>.btn.btn-active-theme-black.dropdown-toggle:after {
+  color: var(--bs-theme-black)
+}
 .btn.btn-outline.btn-outline-primary {
   color: var(--bs-primary);
   border-color: var(--bs-primary);

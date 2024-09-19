@@ -1214,8 +1214,8 @@
                               <!--begin::Actions-->
                               <div class="d-flex my-4">
 
-                                <a href="#" class="btn btn-sm btn-light me-3" data-bs-toggle="modal"
-                                  data-bs-target="#kt_modal_offer_a_deal">Edit Profile</a>
+                                <button class="btn btn-sm btn-light me-3" data-bs-toggle="modal"
+                                  data-bs-target="#kt_modal_edit_profile">Edit Profile</button>
 
                               </div>
                               <!--end::Actions-->
@@ -2372,8 +2372,49 @@
       <!--end::Modal content-->
     </div>
     <!--end::Modal dialog-->
+    <!--start edit profile modal-->
+    
   </div>
   <!--end::Modal - New Target-->
+  <div class="modal fade" tabindex="-1" id="kt_modal_edit_profile" >
+    <div class="modal-dialog modal-dialog-centered mw-650px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Edit Profile</h3>
+
+                <!--begin::Close-->
+                <div class="d-flex align-items-center w-200px w-sm-300px flex-column mt-3">
+                  <div class="d-flex justify-content-between w-100 mt-auto mb-2">
+                    <span class="fw-semibold fs-6 text-gray-500">Profile Completion</span>
+                    <span class="fw-bold fs-6">50%</span>
+                  </div>
+                  <div class="h-5px mx-3 w-100 bg-light mb-3">
+                    <div class="bg-theme-black rounded h-5px" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <!--end::Close-->
+            </div>
+
+            <div class="modal-body">
+                <p>Modal body text goes here.</p>
+            </div>
+
+            <div class="modal-footer d-block">
+              <div class="row">
+                  <div class="col-6">
+                    <button type="button" class="btn btn-light rounded-0 w-100" data-bs-dismiss="modal"   aria-label="Close">Close</button>
+
+                  </div>
+                  <div class="col-6">
+                    <button type="button" class="btn btn-theme-black rounded-0 w-100">Save</button>
+
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+  <!-- end edit profile modal-->
   <!--end::Scrolltop-->
   <!-- End of Page -->
   <!-- Scripts -->
