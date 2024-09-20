@@ -130,6 +130,7 @@
   --bs-theme-black-border: #282728;
 --bs-theme-black-active: #1a1a1a;
 --bs-theme-black-box-shadow: 0px 4px 12px 0px rgba(36, 36, 36, 0.35);
+--bs-text-theme-black:#121212;
 }
 
 [data-bs-theme=dark] {
@@ -55379,6 +55380,10 @@ code:not([class*=language-]).code-dark {
   background-color: var(--bs-dark-light);
   color: var(--bs-dark)
 }
+.badge-theme-black {
+  background-color: var(--bs-dark-light);
+  color: var(--bs-theme-black)
+}
 
 .indicator-progress {
   display: none
@@ -63629,4 +63634,9 @@ body {
 }
 .table-middle-text table{
   border-top: 2px solid #E1E1E1;
+}
+
+.check-theme-black.form-switch .form-check-input[type=checkbox]:checked{
+  background-color:  var(--bs-gray-700);
+  border-color: var(--bs-gray-700);
 }
