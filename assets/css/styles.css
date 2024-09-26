@@ -2643,6 +2643,9 @@ progress {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch
   }
+  .grid-container.list-view .img-box{
+    width: 100% !important;
+  }
 }
 
 @media (max-width:767.98px) {
@@ -2657,6 +2660,13 @@ progress {
   .grid-container.list-view .listing li .badge:last-child{
     margin-bottom: 0px !important;
   }
+  .grid-container.list-view .custome-flex-wrape{
+ 
+    flex-wrap:  wrap  !important;
+  }
+  .grid-container.list-view .custome-flex-wrape .custom-width-box {
+    width: 100% !important;
+  }
 }
 
 
@@ -2665,6 +2675,7 @@ progress {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch
   }
+ 
 }
 
 @media (max-width:1199.98px) {
@@ -2672,6 +2683,7 @@ progress {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch
   }
+ 
 }
 
 @media (max-width:1399.98px) {
