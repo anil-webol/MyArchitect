@@ -1,4 +1,3 @@
-"use strict";
 var KTProjectOverview = (function () {
     var t = KTUtil.getCssVariableValue("--bs-theme-black"),
         e = KTUtil.getCssVariableValue("--bs-theme-black-light"),
@@ -15,7 +14,7 @@ var KTProjectOverview = (function () {
                     var e = t.getContext("2d");
                     new Chart(e, {
                         type: "doughnut",
-                        data: { datasets: [{ data: [29, 34, 12, 5, 3], backgroundColor: ["#dbdfe9","#99a1b7","#4b5675", "#252f4a", "#282728B"] }], labels: ["Preparation & Survey", "Design & Planning", "Technical & Tender", "Builder Chosen / Site-prep", "On-site / Project assistance"] },
+                        data: { datasets: [{ data: [3, 26, 48, 7], backgroundColor: ["#dbdfe9","#99a1b7","#4b5675", "#282728B",] }], labels: ["Total", "Live", "Completed", "On-Hold"] },
                         options: {
                             chart: { fontFamily: "inherit" },
                             cutoutPercentage: 75,
@@ -129,6 +128,3 @@ var KTProjectOverview = (function () {
 KTUtil.onDOMContentLoaded(function () {
     KTProjectOverview.init();
 });
-
-
-
