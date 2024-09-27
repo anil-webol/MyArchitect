@@ -41716,8 +41716,8 @@ h6 {
 .btn.btn-active-theme-black:hover:not(.btn-active),
 .show>.btn.btn-active-theme-black {
   color: var(--bs-white);
-  border-color: var(--bs-theme-blac);
-  background-color: var(--bs-theme-black) !important
+  border-color: var(--bs-theme-black);
+  background-color: var(--bs-theme-black-light) !important
 }
 
 .btn-check:active+.btn.btn-active-theme-black .svg-icon,
