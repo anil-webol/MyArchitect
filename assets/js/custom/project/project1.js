@@ -9,7 +9,7 @@ var KTProjectOverview = (function () {
         init: function () {
             var s, i;
             !(function () {
-                var t = document.getElementById("project_overview_chart");
+                var t = document.getElementById("project_overview_chart1");
                 if (t) {
                     var e = t.getContext("2d");
                     new Chart(e, {
