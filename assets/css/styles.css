@@ -805,6 +805,7 @@ progress {
   .container-sm {
     max-width: 960px
   }
+ 
 }
 
 @media (min-width:1200px) {
@@ -815,6 +816,9 @@ progress {
   .container-sm,
   .container-xl {
     max-width: 1140px
+  }
+  .md-lg-0{
+    margin-bottom: 0px !important;
   }
 }
 
@@ -63733,8 +63737,10 @@ input.placeholder-black::placeholder{
 .grid-container .listing li .badge{
   display: none;
 }
-.grid-container .listing li .badge.active{
+ .listing li .badge.active{
   display: block;
+  background-color: var(--bs-theme-black);
+  color: var(--bs-text-white);
 }
 .grid-container .listing li:nth-child(2){
   order:1;
@@ -63801,4 +63807,51 @@ input.placeholder-black::placeholder{
 }
 .auto-img-box img{
   object-fit: cover;
+}
+
+.pp-card {
+  position: relative;
+  width: 125px;
+  border-radius: 10px;
+  overflow: visible;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f5f5f5;
+}
+
+.pp-img {
+width: 125px;
+  height: 125px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.pp-icon-circle {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.pp-edit-icon {
+  top: -15px;
+  right: -15px;
+}
+
+.pp-delete-icon {
+  bottom: -15px;
+  right: -15px;
+}
+
+#projectImagesDropzone {
+    max-height: 312px;
+    overflow-y: auto;
+    border: 2px dashed #999999;
+    padding: 20px;
+    background-color: #f7f7f7;
 }
