@@ -63799,3 +63799,6 @@ input.placeholder-black::placeholder{
   padding-left: 15px;
   margin-top:15px;  
 }
+.auto-img-box img{
+  object-fit: cover;
+}
