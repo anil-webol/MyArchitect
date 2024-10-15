@@ -20,6 +20,8 @@
   <link href="assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
   <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
   <link href="assets/css/styles.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/plugins/monthSelect/style.css">
+
 </head>
 
 <body id="kt_app_body" data-kt-app-layout="dark-sidebar" data-kt-app-header-fixed="true"
@@ -1007,7 +1009,7 @@
                     <!--begin:Menu item-->
                     <div data-kt-menu-trigger="click" class="menu-item">
                       <!--begin:Menu link-->
-                      <a class="menu-link" href="pages/user-profile/overview.html">
+                      <a class="menu-link" href="network_list.html">
                         <span class="menu-icon">
                           <i class="ki-duotone ki-data">
                             <span class="path1"></span>
@@ -1209,7 +1211,7 @@
                                   </div>
                                   <!--end::Name-->
                                   <!--begin::Info-->
-                                  <div class="d-flex flex-wrap fw-semibold fs-7 mt-3 pe-2">
+                                  <div class="d-flex flex-wrap fw-semibold fs-7 mt-3  pe-2">
                                     <ul class="listing line w-100">
                                       <li>
                                         <div
@@ -1338,7 +1340,7 @@
                     <!--begin::Row-->
                     <div class="row gx-5 gx-xl-10">
                       <!--begin::Col-->
-                      <div class="col-lg-6 col-md-6 col-sm-12 mb-10">
+                      <div class="col-lg-6 col-md-6 col-sm-12 mb-10 ">
                         <!--begin::Summary-->
                         <div class="card card-flush h-lg-100">
                           <!--begin::Card header-->
@@ -1371,7 +1373,7 @@
                                           </i>
                                           <!--end::Icon-->
                                           <!--begin::Datepicker-->
-                                          <input class="form-control ps-12 flatpickr-input" name="due_date"
+                                          <input class="form-control ps-12 flatpickr-input"
                                             id="kt_datepicker_deposit_paid" />
                                           <!--end::Datepicker-->
                                         </div>
@@ -1393,7 +1395,7 @@
                                           </i>
                                           <!--end::Icon-->
                                           <!--begin::Datepicker-->
-                                          <input class="form-control ps-12 flatpickr-input" name="due_date"
+                                          <input class="form-control ps-12 flatpickr-input"
                                             id="kt_datepicker_planning_sub" />
                                           <!--end::Datepicker-->
                                         </div>
@@ -1415,7 +1417,7 @@
                                           </i>
                                           <!--end::Icon-->
                                           <!--begin::Datepicker-->
-                                          <input class="form-control ps-12 flatpickr-input" name="due_date"
+                                          <input class="form-control ps-12 flatpickr-input"
                                             id="kt_datepicker_final_applc_aprove" />
                                           <!--end::Datepicker-->
                                         </div>
@@ -1437,7 +1439,7 @@
                                           </i>
                                           <!--end::Icon-->
                                           <!--begin::Datepicker-->
-                                          <input class="form-control ps-12 flatpickr-input" name="due_date"
+                                          <input class="form-control ps-12 flatpickr-input"
                                             id="kt_datepicker_build_serv_paid" />
                                           <!--end::Datepicker-->
                                         </div>
@@ -1459,7 +1461,7 @@
                                           </i>
                                           <!--end::Icon-->
                                           <!--begin::Datepicker-->
-                                          <input class="form-control ps-12 flatpickr-input" name="due_date"
+                                          <input class="form-control ps-12 flatpickr-input"
                                             id="kt_datepicker_project_start_site" />
                                           <!--end::Datepicker-->
                                         </div>
@@ -1481,7 +1483,7 @@
                                           </i>
                                           <!--end::Icon-->
                                           <!--begin::Datepicker-->
-                                          <input class="form-control ps-12 flatpickr-input" name="due_date"
+                                          <input class="form-control ps-12 flatpickr-input"
                                             id="kt_datepicker_practicl_completion" />
                                           <!--end::Datepicker-->
                                         </div>
@@ -1517,7 +1519,7 @@
                                           conservation</label>
                                       </div>
                                       <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
-                                        <input type="text" class="form-control" name="due_date" />
+                                        <input type="text" class="form-control" />
                                       </div>
                                     </div>
                                   </div>
@@ -1616,10 +1618,10 @@
                         </div>
                         <!--end::Summary-->
                       </div>
-                      <div class="col-lg-6 col-md-6 col-sm-12">
+                      <div class="col-lg-6 col-md-6 col-sm-12 ps-0">
                         <div class="row">
                           <!--Start column-->
-                          <div class="col-lg-12 col-md-12 col-sm-12 mb-6">
+                          <div class="col-lg-12 col-md-12 col-sm-12 mb-6 p-0">
                             <!--begin::Summary-->
                             <div class="card card-flush h-lg-100">
                               <!--begin::Card header-->
@@ -1700,7 +1702,7 @@
                                         <td class="text-center">
                                           <div
                                             class="form-check form-switch form-check-custom check-theme-black justify-content-center">
-                                            <input class="form-check-input h-25px w-50px" type="checkbox" value=""
+                                            <input class="form-check-input h-25px w-50px" type="checkbox"
                                               id="flexSwitchDefault" />
                                           </div>
                                         </td>
@@ -1755,7 +1757,7 @@
                                         <td class="text-center">
                                           <div
                                             class="form-check form-switch form-check-custom check-theme-black justify-content-center">
-                                            <input class="form-check-input h-25px w-50px" type="checkbox" value=""
+                                            <input class="form-check-input h-25px w-50px" type="checkbox"
                                               id="flexSwitchDefault" />
                                           </div>
                                         </td>
@@ -1810,7 +1812,7 @@
                                         <td class="text-center">
                                           <div
                                             class="form-check form-switch form-check-custom check-theme-black justify-content-center">
-                                            <input class="form-check-input h-25px w-50px" type="checkbox" value=""
+                                            <input class="form-check-input h-25px w-50px" type="checkbox"
                                               id="flexSwitchDefault" />
                                           </div>
                                         </td>
@@ -1865,7 +1867,7 @@
                                         <td class="text-center">
                                           <div
                                             class="form-check form-switch form-check-custom check-theme-black justify-content-center">
-                                            <input class="form-check-input h-25px w-50px" type="checkbox" value=""
+                                            <input class="form-check-input h-25px w-50px" type="checkbox"
                                               id="flexSwitchDefault" />
                                           </div>
                                         </td>
@@ -1920,7 +1922,7 @@
                                         <td class="text-center">
                                           <div
                                             class="form-check form-switch form-check-custom check-theme-black justify-content-center">
-                                            <input class="form-check-input h-25px w-50px" type="checkbox" value=""
+                                            <input class="form-check-input h-25px w-50px" type="checkbox"
                                               id="flexSwitchDefault" />
                                           </div>
                                         </td>
@@ -1936,7 +1938,7 @@
                           </div>
                           <!--End column-->
                           <!--Start column-->
-                          <div class="col-lg-12 col-md-12 col-sm-12">
+                          <div class="col-lg-12 col-md-12 col-sm-12 p-0">
                             <!--begin::Summary-->
                             <div class="card card-flush h-lg-100">
                               <!--begin::Card header-->
@@ -3543,12 +3545,11 @@
 
   <!--end::Modal - New Target-->
   <div class="modal fade" tabindex="-1" id="kt_modal_edit_project">
-    <div class="modal-dialog modal-dialog-centered mw-90">
+    <div class="modal-dialog  mw-90">
       <div class="modal-content">
         <form id="kt_ecommerce_settings_general_form" class="form" action="#">
           <div class="modal-header">
             <h3 class="modal-title">Edit Project</h3>
-
             <!--begin::Close-->
 
             <!--end::Close-->
@@ -3557,1127 +3558,780 @@
             <!--begin:: the row-->
             <div class="row">
               <!--begin:: the column-->
-              <div class="col-lg-6 col-md-6 col-sm-12">
-                <!--begin:: the card-->
-                <div class="card card-bordered mb-4">
-                  <div class="card-body">
-                    <!--begin:: the row-->
-                    <div class="row">
-                      <div class="col-lg-12 col-md-12 col-sm-12 mb-7">
-                        <!--begin::Input group-->
-                        <div class="fv-row">
-                          <!--begin::Label-->
-                          <label class="fs-6 fw-semibold form-label mt-3">
-                            <span>Name of Conservation Area</span>
-                          </label>
-                          <!--end::Label-->
-                          <!--begin::Input-->
-                          <input type="text" class="form-control" name="name_conversion_area" value="" />
-                          <!--end::Input-->
-                        </div>
-                        <!--end::Input group-->
-                      </div>
-                      <div class="col-lg-12 col-md-12 col-sm-12">
-                        <div class="row">
-                          <!--begin::Col-->
-                          <div class="col-md-6 col-sm-12 fv-row mb-7">
-                            <label class="fs-6 fw-semibold mb-2">Deposite Paid On</label>
-                            <!--begin::Input-->
-                            <div class="position-relative d-flex align-items-center">
-                              <!--begin::Icon-->
+              <div class="col-lg-6 col-md-6 col-sm-12 mb-7">
+                <h3 class="mb-7">Project Details</h3>
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12 mb-5">
+                    <!--begin::Label-->
+                    <label class="fs-6 fw-semibold form-label">
+                      <span>Project Title</span>
+                    </label>
+                    <!--end::Label-->
+                    <!--begin::Input-->
+                    <input type="text" class="form-control" name="project_title" />
+                    <!--end::Input-->
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12 mb-5">
+                    <!--begin::Label-->
+                    <label class="fs-6 fw-semibold form-label">
+                      <span>Client Name</span>
+                    </label>
+                    <!--end::Label-->
+                    <!--begin::Input-->
+                    <input type="text" class="form-control" name="clent_name" />
+                    <!--end::Input-->
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12 mb-5">
+                    <!--begin::Label-->
+                    <label class="fs-6 fw-semibold form-label">
+                      <span>Client Email</span>
+                    </label>
+                    <!--end::Label-->
+                    <!--begin::Input group-->
+                    <input type="email" class="form-control" name="clent_email" />
 
-                              <i class="ki-duotone ki-calendar fs-2 position-absolute mx-4">
-                                <span class="path1"></span>
-                                <span class="path2"></span>
-                              </i>
-                              <!--end::Icon-->
-                              <!--begin::Datepicker-->
-                              <input class="form-control ps-12 flatpickr-input" name="due_date" id="kt_datepicker_1" />
-                              <!--end::Datepicker-->
-                            </div>
-                            <!--end::Input-->
-                          </div>
-                          <!--end::Col-->
-                          <!--begin::Col-->
-                          <div class="col-md-6 col-sm-12 fv-row mb-7">
-                            <label class="fs-6 fw-semibold mb-2">Planning Submitted On</label>
-                            <!--begin::Input-->
-                            <div class="position-relative d-flex align-items-center">
-                              <!--begin::Icon-->
-                              <i class="ki-duotone ki-calendar fs-2 position-absolute mx-4">
-                                <span class="path1"></span>
-                                <span class="path2"></span>
-                              </i>
-                              <!--end::Icon-->
-                              <!--begin::Datepicker-->
-                              <input class="form-control ps-12 flatpickr-input" name="due_date" id="kt_datepicker_2" />
-                              <!--end::Datepicker-->
-                            </div>
-                            <!--end::Input-->
-                          </div>
-                          <!--end::Col-->
-                          <!--begin::Col-->
-                          <div class="col-md-6 col-sm-12 fv-row mb-7">
-                            <label class="fs-6 fw-semibold mb-2">Final PA Approved On On</label>
-                            <!--begin::Input-->
-                            <div class="position-relative d-flex align-items-center">
-                              <!--begin::Icon-->
-                              <i class="ki-duotone ki-calendar fs-2 position-absolute mx-4">
-                                <span class="path1"></span>
-                                <span class="path2"></span>
-                              </i>
-                              <!--end::Icon-->
-                              <!--begin::Datepicker-->
-                              <input class="form-control ps-12 flatpickr-input" name="due_date" id="kt_datepicker_3" />
-                              <!--end::Datepicker-->
-                            </div>
-                            <!--end::Input-->
-                          </div>
-                          <!--end::Col-->
-                          <!--begin::Col-->
-                          <div class="col-md-6 col-sm-12 fv-row mb-7">
-                            <label class="fs-6 fw-semibold mb-2">Build Service Paid On On</label>
-                            <!--begin::Input-->
-                            <div class="position-relative d-flex align-items-center">
-                              <!--begin::Icon-->
-                              <i class="ki-duotone ki-calendar fs-2 position-absolute mx-4">
-                                <span class="path1"></span>
-                                <span class="path2"></span>
-                              </i>
-                              <!--end::Icon-->
-                              <!--begin::Datepicker-->
-                              <input class="form-control ps-12 flatpickr-input" name="due_date" id="kt_datepicker_4" />
-                              <!--end::Datepicker-->
-                            </div>
-                            <!--end::Input-->
-                          </div>
-                          <!--end::Col-->
-                          <!--begin::Col-->
-                          <div class="col-md-6 col-sm-12 fv-row mb-7 mb-md-0">
-                            <label class="fs-6 fw-semibold mb-2">Project Start Date On</label>
-                            <!--begin::Input-->
-                            <div class="position-relative d-flex align-items-center">
-                              <!--begin::Icon-->
-                              <i class="ki-duotone ki-calendar fs-2 position-absolute mx-4">
-                                <span class="path1"></span>
-                                <span class="path2"></span>
-                              </i>
-                              <!--end::Icon-->
-                              <!--begin::Datepicker-->
-                              <input class="form-control ps-12 flatpickr-input" name="due_date" id="kt_datepicker_5" />
-                              <!--end::Datepicker-->
-                            </div>
-                            <!--end::Input-->
-                          </div>
-                          <!--end::Col-->
-                          <!--begin::Col-->
-                          <div class="col-md-6 col-sm-12 fv-row mb-7 mb-md-0">
-                            <label class="fs-6 fw-semibold mb-2">Practical Completion Date On</label>
-                            <!--begin::Input-->
-                            <div class="position-relative d-flex align-items-center">
-                              <!--begin::Icon-->
-                              <i class="ki-duotone ki-calendar-8 fs-2 position-absolute mx-4">
-                                <span class="path1"></span>
-                                <span class="path2"></span>
-                                <span class="path3"></span>
-                                <span class="path4"></span>
-                                <span class="path5"></span>
-                                <span class="path6"></span>
-                              </i>
-                              <!--end::Icon-->
-                              <!--begin::Datepicker-->
-                              <input class="form-control ps-12 flatpickr-input" name="due_date" id="kt_datepicker_6" />
-                              <!--end::Datepicker-->
-                            </div>
-                            <!--end::Input-->
-                          </div>
-                          <!--end::Col-->
-                        </div>
-                      </div>
-                    </div>
-                    <!--end:: the row-->
+                    <!--end::Input group-->
                   </div>
-                </div>
-                <!--begin:: the card-->
-                <!--begin:: the card-->
-                <div class="card card-bordered mb-4">
-                  <div class="card-body">
-                    <!--begin:: the row-->
-                    <div class="row">
-                      <div class="col-lg-12 col-md-12 col-sm-12 mb-5">
-                        <div class="row">
-                          <div class="col-lg-12 col-md-12 col-sm-12 mb-7">
-                            <!--begin::Input group-->
-                            <div class="fv-row row">
-                              <div class="col-lg-8 col-md-7 col-sm-12 mb-3 mb-md-0">
-                                <!--begin::Label-->
-                                <label class="fs-6 fw-semibold form-label">
-                                  <span>Planning Application Submission Required</span>
-                                </label>
-                                <!--end::Label-->
-                              </div>
-                              <div class="col-lg-4 col-md-5 col-sm-12 d-md-flex">
-                                <div class="form-check form-check-custom form-check-sm me-md-10 mb-2 mb-md-0">
-                                  <input class="form-check-input check-default" type="radio" value=""
-                                    id="plan_application" name="plan_application" />
-                                  <label class="form-check-label text-theme-black" for="plan_application">
-                                    Yes
-                                  </label>
-                                </div>
-                                <div class="form-check form-check-custom form-check-sm">
-                                  <input class="form-check-input check-default" type="radio" value=""
-                                    id="plan_application1" name="plan_application" />
-                                  <label class="form-check-label text-theme-black" for="plan_application1">
-                                    No
-                                  </label>
-                                </div>
-                              </div>
-                            </div>
-                            <!--end::Input group-->
-                          </div>
-                          <div class="col-lg-12 col-md-12 col-sm-12 mb-3">
-                            <!--begin::Input group-->
-                            <div class="fv-row row">
-                              <div class="col-lg-12 col-md-12 col-sm-12 mb-4">
-                                <!--begin::Label-->
-                                <label class="fs-6 fw-semibold form-label">
-                                  <span>Type of Planning</span>
-                                </label>
-                                <!--end::Label-->
-                              </div>
-                              <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                                <div class="form-check form-check-custom form-check-solid form-check-sm">
-                                  <input class="form-check-input check-default" type="checkbox" value=""
-                                    id="flexRadioLg" />
-                                  <label class="form-check-label" for="flexRadioLg">
-                                    House Holder planning
-                                  </label>
-                                </div>
-                              </div>
-                              <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                                <div class="form-check form-check-custom form-check-solid form-check-sm">
-                                  <input class="form-check-input check-default" type="checkbox" value=""
-                                    id="flexRadioLg1" />
-                                  <label class="form-check-label" for="flexRadioLg1">
-                                    Larger Home Extension Scheme
-                                  </label>
-                                </div>
-                              </div>
-                              <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                                <div class="form-check form-check-custom form-check-solid form-check-sm">
-                                  <input class="form-check-input check-default" type="checkbox" value=""
-                                    id="flexRadioLg2" />
-                                  <label class="form-check-label" for="flexRadioLg2">
-                                    Permitted Development
-                                  </label>
-                                </div>
-                              </div>
-                              <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                                <div class="form-check form-check-custom form-check-solid form-check-sm">
-                                  <input class="form-check-input check-default" type="checkbox" value=""
-                                    id="flexRadioLg3" />
-                                  <label class="form-check-label" for="flexRadioLg3">
-                                    Listed Building Consent
-                                  </label>
-                                </div>
-                              </div>
-                              <div class="col-lg-6 col-md-6 col-sm-12">
-                                <div class="form-check form-check-custom form-check-solid form-check-sm">
-                                  <input class="form-check-input check-default" type="checkbox" value=""
-                                    id="flexRadioLg4" />
-                                  <label class="form-check-label" for="flexRadioLg4s">
-                                    Licence To Alter
-                                  </label>
-                                </div>
-                              </div>
-                            </div>
-                            <!--end::Input group-->
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-12 col-md-12 col-sm-12 mb-5">
-                        <div class="row">
-                          <div class="col-lg-12 col-md-12 col-sm-12 mb-7">
-                            <!--begin::Input group-->
-                            <div class="fv-row row">
-                              <div class="col-lg-8 col-md-7 col-sm-12 mb-4 mb-md-0">
-                                <!--begin::Label-->
-                                <label class="fs-6 fw-semibold form-label">
-                                  <span>General Arrangement Drawings ?</span>
-                                </label>
-                                <!--end::Label-->
-                              </div>
-                              <div class="col-lg-4 col-md-5 col-sm-12 d-md-flex">
-                                <div class="form-check form-check-custom form-check-sm me-md-10 mb-2 mb-md-0">
-                                  <input class="form-check-input check-default" type="radio" value="" id="yes1"
-                                    name="gen_arang_draw" />
-                                  <label class="form-check-label text-theme-black" for="yes1">
-                                    Yes
-                                  </label>
-                                </div>
-                                <div class="form-check form-check-custom form-check-sm">
-                                  <input class="form-check-input check-default" type="radio" value="" id="no1"
-                                    name="gen_arang_draw" />
-                                  <label class="form-check-label text-theme-black" for="no1">
-                                    No
-                                  </label>
-                                </div>
-                              </div>
-                            </div>
-                            <!--end::Input group-->
-                          </div>
-                          <div class="col-lg-12 col-md-12 col-sm-12">
-                            <!--begin::Input group-->
-                            <div class="fv-row row">
-                              <div class="col-lg-12 col-md-12 col-sm-12 mb-4">
-                                <!--begin::Label-->
-                                <label class="fs-6 fw-semibold form-label">
-                                  <span>Additional Planning Statements</span>
-                                </label>
-                                <!--end::Label-->
-                              </div>
-                              <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                                <div class="form-check form-check-custom form-check-solid form-check-sm">
-                                  <input class="form-check-input check-default" type="checkbox" value=""
-                                    id="design_access" />
-                                  <label class="form-check-label" for="design_access">
-                                    Design and Access Statements
-                                  </label>
-                                </div>
-                              </div>
-                              <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                                <div class="form-check form-check-custom form-check-solid form-check-sm">
-                                  <input class="form-check-input check-default" type="checkbox" value=""
-                                    id="fire_statergy" />
-                                  <label class="form-check-label" for="fire_statergy">
-                                    Fire & Safty Statergy
-                                  </label>
-                                </div>
-                              </div>
-                              <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                                <div class="form-check form-check-custom form-check-solid form-check-sm">
-                                  <input class="form-check-input check-default" type="checkbox" value=""
-                                    id="heritage_statement" />
-                                  <label class="form-check-label" for="heritage_statement">
-                                    Heritage Statement
-                                  </label>
-                                </div>
-                              </div>
-                              <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                                <div class="form-check form-check-custom form-check-solid form-check-sm">
-                                  <input class="form-check-input check-default" type="checkbox" value=""
-                                    id="food_risk_assessment" />
-                                  <label class="form-check-label" for="food_risk_assessment">
-                                    Food Risk Assessment
-                                  </label>
-                                </div>
-                              </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12 mb-5">
+                    <!--begin::Label-->
+                    <label class="fs-6 fw-semibold form-label">
+                      <span>Project Description</span>
+                    </label>
+                    <!--end::Label-->
+                    <!--begin::Input group-->
+                    <textarea class="form-control" aria-label="With textarea" rows="2"></textarea>
+                    <!--end::Input group-->
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12 mb-5">
+                    <!--begin::Label-->
+                    <label class="fs-6 fw-semibold form-label">
+                      <span>Address</span>
+                    </label>
+                    <!--end::Label-->
+                    <!--begin::Input group-->
+                    <textarea class="form-control" aria-label="With textarea" rows="2"></textarea>
+                    <!--end::Input group-->
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12 mb-5">
+                    <!--begin::Label-->
+                    <label class="fs-6 fw-semibold form-label">
+                      <span class="required">Project Type</span>
+                    </label>
+                    <!--end::Label-->
+                    <!--begin::Input group-->
+                    <select class="form-select" aria-label="Select example" data-placeholder="">
+                      <option disabled selected></option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                    <!--end::Input group-->
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12 mb-5">
+                    <!--begin::Label-->
+                    <label class="fs-6 fw-semibold form-label">
+                      <span>Project Tags</span>
+                    </label>
+                    <!--end::Label-->
+                    <!--begin::Input group-->
+                    <input class="form-control them-black" data-kt-repeater="tagify" value="tag1, tag2, tag3"
+                      id="kt_tagify_2" />
+                    <!--end::Input group-->
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12 mb-5">
+                    <!--begin::Label-->
+                    <label class="fs-6 fw-semibold form-label">
+                      <span>Project Budget Range</span>
+                    </label>
+                    <!--end::Label-->
+                    <!--begin::Input group-->
+                    <select class="form-select" aria-label="Select example" data-placeholder="">
+                      <option disabled selected></option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                    <!--end::Input group-->
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
+                    <!--begin::Label-->
+                    <label class="fs-6 fw-semibold form-label">
+                      <span>Design Fee Agreed</span>
+                    </label>
+                    <!--end::Label-->
+                    <!--begin::Input group-->
+                    <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1" />
+                    <!--end::Input group-->
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
+                    <!--begin::Label-->
+                    <label class="fs-6 fw-semibold form-label">
+                      <span>Design Fee Paid</span>
+                    </label>
+                    <!--end::Label-->
+                    <!--begin::Input group-->
+                    <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1" />
+                    <!--end::Input group-->
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
+                    <!--begin::Label-->
+                    <label class="fs-6 fw-semibold form-label">
+                      <span>Build Fee Agreed</span>
+                    </label>
+                    <!--end::Label-->
+                    <!--begin::Input group-->
+                    <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1" />
+                    <!--end::Input group-->
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
+                    <!--begin::Label-->
+                    <label class="fs-6 fw-semibold form-label">
+                      <span>Build Fee Paid</span>
+                    </label>
+                    <!--end::Label-->
+                    <!--begin::Input group-->
+                    <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1" />
+                    <!--end::Input group-->
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
+                    <!--begin::Label-->
+                    <label class="fs-6 fw-semibold form-label">
+                      <span>Patnership Fee Agreed</span>
+                    </label>
+                    <!--end::Label-->
+                    <!--begin::Input group-->
+                    <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1" />
+                    <!--end::Input group-->
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
+                    <!--begin::Label-->
+                    <label class="fs-6 fw-semibold form-label">
+                      <span>Patnership Fee Paid</span>
+                    </label>
+                    <!--end::Label-->
+                    <!--begin::Input group-->
+                    <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1" />
+                    <!--end::Input group-->
+                  </div>
 
-                              <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                                <div class="form-check form-check-custom form-check-solid form-check-sm">
-                                  <input class="form-check-input check-default" type="checkbox" value=""
-                                    id="meth_cons_statem" />
-                                  <label class="form-check-label" for="meth_cons_statem">
-                                    Method & Construction Statement
-                                  </label>
-                                </div>
-                              </div>
-                              <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                                <div class="form-check form-check-custom form-check-solid form-check-sm">
-                                  <input class="form-check-input check-default" type="checkbox" value=""
-                                    id="day_assessment" />
-                                  <label class="form-check-label" for="day_assessment">
-                                    Day & Sunlight Assessment
-                                  </label>
-                                </div>
-                              </div>
-                              <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                                <div class="form-check form-check-custom form-check-solid form-check-sm">
-                                  <input class="form-check-input check-default" type="checkbox" value=""
-                                    id="sut_assement" />
-                                  <label class="form-check-label" for="sut_assement">
-                                    Sutainable Drainage Assessment
-                                  </label>
-                                </div>
-                              </div>
-                              <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                                <div class="form-check form-check-custom form-check-solid form-check-sm">
-                                  <input class="form-check-input check-default" type="checkbox" value=""
-                                    id="sustable_design" />
-                                  <label class="form-check-label" for="sustable_design">
-                                    Sustainable Design & Construction Statement
-                                  </label>
-                                </div>
-                              </div>
-                            </div>
-                            <!--end::Input group-->
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-12 col-md-12 col-sm-12">
-                        <div class="row">
-                          <div class="col-lg-12 col-md-12 col-sm-12 mb-7">
-                            <!--begin::Input group-->
-                            <div class="fv-row row">
-                              <div class="col-lg-8 col-md-7 col-sm-12 mb-4 mb-md-0">
-                                <!--begin::Label-->
-                                <label class="fs-6 fw-semibold form-label">
-                                  <span>Building Regulation Drawing?</span>
-                                </label>
-                                <!--end::Label-->
-                              </div>
-                              <div class="col-lg-4 col-md-5 col-sm-12 d-md-flex">
-                                <div class="form-check form-check-custom form-check-sm me-md-10 mb-2 mb-md-0">
-                                  <input class="form-check-input check-default" type="radio" value="" id="yes2"
-                                    name="bulding_regulation" />
-                                  <label class="form-check-label text-theme-black" for="yes2">
-                                    Yes
-                                  </label>
-                                </div>
-                                <div class="form-check form-check-custom form-check-sm">
-                                  <input class="form-check-input check-default" type="radio" value="" id="no2"
-                                    name="bulding_regulation" />
-                                  <label class="form-check-label text-theme-black" for="no2">
-                                    No
-                                  </label>
-                                </div>
-                              </div>
-                            </div>
-                            <!--end::Input group-->
-                          </div>
-                          <div class="col-lg-12 col-md-12 col-sm-12">
-                            <!--begin::Input group-->
-                            <div class="fv-row row">
-                              <div class="col-lg-12 col-md-12 col-sm-12 mb-4">
-                                <!--begin::Label-->
-                                <label class="fs-6 fw-semibold form-label">
-                                  <span>Additional Planning Statements</span>
-                                </label>
-                                <!--end::Label-->
-                              </div>
-                              <div class="col-lg-12 col-md-6 col-sm-12">
-                                <select class="form-select" aria-label="Select example" data-placeholder="">
-                                  <option disabled selected></option>
-                                  <option value="1">One</option>
-                                  <option value="2">Two</option>
-                                  <option value="3">Three</option>
-                                </select>
-                              </div>
-                            </div>
-                            <!--end::Input group-->
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!--end:: the row-->
-                  </div>
-                </div>
-                <!--begin:: the card-->
-                <!--begin:: the card-->
-                <div class="card card-bordered mb-4">
-                  <div class="card-body">
-                    <!--begin:: the row-->
-                    <div class="row">
-                      <div class="col-lg-12 col-md-12 col-sm-12 mb-7">
-                        <!--begin::Input group-->
-                        <div class="fv-row row">
-                          <div class="col-lg-12 col-md-12 col-sm-12 mb-3">
-                            <!--begin::Label-->
-                            <label class="fs-6 fw-semibold form-label">
-                              <span>Interior Design Services</span>
-                            </label>
-                            <!--end::Label-->
-                          </div>
 
-                          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                            <div class="form-check form-check-custom form-check-solid form-check-sm">
-                              <input class="form-check-input check-default" type="checkbox" value="" id="ellighlay" />
-                              <label class="form-check-label" for="ellighlay">
-                                Electrical and Lighting Layour
-                              </label>
-                            </div>
-                          </div>
-                          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                            <div class="form-check form-check-custom form-check-solid form-check-sm">
-                              <input class="form-check-input check-default" type="checkbox" value=""
-                                id="3d_visualisation" />
-                              <label class="form-check-label" for="3d_visualisation">
-                                3D Visualisation
-                              </label>
-                            </div>
-                          </div>
-                          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                            <div class="form-check form-check-custom form-check-solid form-check-sm">
-                              <input class="form-check-input check-default" type="checkbox" value=""
-                                id="herit_statement" />
-                              <label class="form-check-label" for="herit_statement">
-                                Heritage Statement
-                              </label>
-                            </div>
-                          </div>
-                          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                            <div class="form-check form-check-custom form-check-solid form-check-sm">
-                              <input class="form-check-input check-default" type="checkbox" value=""
-                                id="interior_elevation" />
-                              <label class="form-check-label" for="interior_elevation">
-                                Interior Elevation
-                              </label>
-                            </div>
-                          </div>
-                          <div class="col-lg-6 col-md-6 col-sm-12">
-                            <div class="form-check form-check-custom form-check-solid form-check-sm">
-                              <input class="form-check-input check-default" type="checkbox" value=""
-                                id="product_selection" />
-                              <label class="form-check-label" for="product_selection">
-                                Product Selection
-                              </label>
-                            </div>
-                          </div>
-                        </div>
-                        <!--end::Input group-->
-                      </div>
-                      <div class="col-lg-12 col-md-12 col-sm-12 mb-7">
-                        <!--begin::Input group-->
-                        <div class="fv-row row">
-                          <div class="col-lg-8 col-md-7 col-sm-12 mb-3 mb-md-0">
-                            <!--begin::Label-->
-                            <label class="fs-6 fw-semibold form-label">
-                              <span>Interior Design Concept</span>
-                            </label>
-                            <!--end::Label-->
-                          </div>
-                          <div class="col-lg-4 col-md-5 col-sm-12 d-md-flex">
-                            <div class="form-check form-check-custom form-check-sm me-md-10 mb-2 mb-md-0">
-                              <input class="form-check-input check-default" type="radio" value="" id="int_yes"
-                                name="interior_design_concept" />
-                              <label class="form-check-label text-theme-black" for="int_yes">
-                                Yes
-                              </label>
-                            </div>
-                            <div class="form-check form-check-custom form-check-sm">
-                              <input class="form-check-input check-default" type="radio" value="" id="int_no"
-                                name="interior_design_concept" />
-                              <label class="form-check-label text-theme-black" for="int_no">
-                                No
-                              </label>
-                            </div>
-                          </div>
-                        </div>
-                        <!--end::Input group-->
-                      </div>
-                      <div class="col-lg-12 col-md-12 col-sm-12">
-                        <!--begin::Input group-->
-                        <div class="fv-row row">
-                          <div class="col-lg-8 col-md-7 col-sm-12 mb-3 mb-md-0">
-                            <!--begin::Label-->
-                            <label class="fs-6 fw-semibold form-label">
-                              <span>3D Model & Visualisation</span>
-                            </label>
-                            <!--end::Label-->
-                          </div>
-                          <div class="col-lg-4 col-md-5 col-sm-12 d-md-flex">
-                            <div class="form-check form-check-custom form-check-sm me-md-10 mb-2 mb-md-0">
-                              <input class="form-check-input check-default" type="radio" value="" id="3d_yes"
-                                name="3d_visual" />
-                              <label class="form-check-label text-theme-black" for="3d_yes">
-                                Yes
-                              </label>
-                            </div>
-                            <div class="form-check form-check-custom form-check-sm">
-                              <input class="form-check-input check-default" type="radio" value="" id="3d_no"
-                                name="3d_visual" />
-                              <label class="form-check-label text-theme-black" for="3d_no">
-                                No
-                              </label>
-                            </div>
-                          </div>
-                        </div>
-                        <!--end::Input group-->
-                      </div>
+                </div>
+                <div class="row mt-5">
+                  <div class="col-lg-12 col-md-12 col-m-12">
+                    <h3 class="mb-7">Important Dates</h3>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
+                    <label class="fs-6 fw-semibold mb-2 form-label" for="kt_datepicker_1">Deposite Paid On</label>
+                    <!--begin::Input-->
+                    <div class="position-relative d-flex align-items-center">
+                      <!--begin::Icon-->
+
+                      <i class="ki-duotone ki-calendar fs-2 position-absolute mx-4">
+                        <span class="path1"></span>
+                        <span class="path2"></span>
+                      </i>
+                      <!--end::Icon-->
+                      <!--begin::Datepicker-->
+                      <input class="form-control ps-12 " id="kt_datepicker_1" />
+                      <!--end::Datepicker-->
                     </div>
-                    <!--end:: the row-->
+                    <!--end::Input-->
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
+                    <label class="fs-6 fw-semibold mb-2">Planning Submitted On</label>
+                    <!--begin::Input-->
+                    <div class="position-relative d-flex align-items-center">
+                      <!--begin::Icon-->
+                      <i class="ki-duotone ki-calendar fs-2 position-absolute mx-4">
+                        <span class="path1"></span>
+                        <span class="path2"></span>
+                      </i>
+                      <!--end::Icon-->
+                      <!--begin::Datepicker-->
+                      <input class="form-control ps-12 flatpickr-input" id="kt_datepicker_2" />
+                      <!--end::Datepicker-->
+                    </div>
+                    <!--end::Input-->
+                  </div>
+                  <!--end::Col-->
+                  <!--begin::Col-->
+                  <div class="col-md-6 col-sm-12 mb-5">
+                    <label class="fs-6 fw-semibold mb-2">Final Planning Application Approved On</label>
+                    <!--begin::Input-->
+                    <div class="position-relative d-flex align-items-center">
+                      <!--begin::Icon-->
+                      <i class="ki-duotone ki-calendar fs-2 position-absolute mx-4">
+                        <span class="path1"></span>
+                        <span class="path2"></span>
+                      </i>
+                      <!--end::Icon-->
+                      <!--begin::Datepicker-->
+                      <input class="form-control ps-12 flatpickr-input" id="kt_datepicker_3" />
+                      <!--end::Datepicker-->
+                    </div>
+                    <!--end::Input-->
+                  </div>
+                  <div class="col-md-6 col-sm-12 mb-5">
+                    <label class="fs-6 fw-semibold mb-2">Build Service Paid On</label>
+                    <!--begin::Input-->
+                    <div class="position-relative d-flex align-items-center">
+                      <!--begin::Icon-->
+                      <i class="ki-duotone ki-calendar fs-2 position-absolute mx-4">
+                        <span class="path1"></span>
+                        <span class="path2"></span>
+                      </i>
+                      <!--end::Icon-->
+                      <!--begin::Datepicker-->
+                      <input class="form-control ps-12 flatpickr-input" id="kt_datepicker_4" />
+                      <!--end::Datepicker-->
+                    </div>
+                    <!--end::Input-->
+                  </div>
+                  <div class="col-md-6 col-sm-12 mb-5">
+                    <label class="fs-6 fw-semibold mb-2">Construction Start Date</label>
+                    <!--begin::Input-->
+                    <div class="position-relative d-flex align-items-center">
+                      <!--begin::Icon-->
+                      <i class="ki-duotone ki-calendar fs-2 position-absolute mx-4">
+                        <span class="path1"></span>
+                        <span class="path2"></span>
+                      </i>
+                      <!--end::Icon-->
+                      <!--begin::Datepicker-->
+                      <input class="form-control ps-12 flatpickr-input" id="kt_datepicker_5" />
+                      <!--end::Datepicker-->
+                    </div>
+                    <!--end::Input-->
+                  </div>
+                  <div class="col-md-6 col-sm-12 mb-5">
+                    <label class="fs-6 fw-semibold mb-2">Parctial Completiton</label>
+                    <!--begin::Input-->
+                    <div class="position-relative d-flex align-items-center">
+                      <!--begin::Icon-->
+                      <i class="ki-duotone ki-calendar fs-2 position-absolute mx-4">
+                        <span class="path1"></span>
+                        <span class="path2"></span>
+                      </i>
+                      <!--end::Icon-->
+                      <!--begin::Datepicker-->
+                      <input class="form-control ps-12 flatpickr-input" id="kt_datepicker_6" />
+                      <!--end::Datepicker-->
+                    </div>
+                    <!--end::Input-->
+                  </div>
+                  <div class="col-md-6 col-sm-12 mb-5">
+                    <label class="fs-6 fw-semibold mb-2">Final Balance Paid</label>
+                    <!--begin::Input-->
+                    <div class="position-relative d-flex align-items-center">
+                      <!--begin::Icon-->
+                      <i class="ki-duotone ki-calendar fs-2 position-absolute mx-4">
+                        <span class="path1"></span>
+                        <span class="path2"></span>
+                      </i>
+                      <!--end::Icon-->
+                      <!--begin::Datepicker-->
+                      <input class="form-control ps-12 flatpickr-input" id="kt_datepicker_7" />
+                      <!--end::Datepicker-->
+                    </div>
+                    <!--end::Input-->
+                  </div>
+                  <div class="col-md-6 col-sm-12 mb-5">
+                    <label class="fs-6 fw-semibold mb-2">Photography Taken</label>
+                    <!--begin::Input-->
+                    <div class="position-relative d-flex align-items-center">
+                      <!--begin::Icon-->
+                      <i class="ki-duotone ki-calendar fs-2 position-absolute mx-4">
+                        <span class="path1"></span>
+                        <span class="path2"></span>
+                      </i>
+                      <!--end::Icon-->
+                      <!--begin::Datepicker-->
+                      <input class="form-control ps-12 flatpickr-input" id="kt_datepicker_8" />
+                      <!--end::Datepicker-->
+                    </div>
+                    <!--end::Input-->
                   </div>
                 </div>
-                <!--begin:: the card-->
-                <!--begin:: the card-->
-                <div class="card card-bordered mb-4">
-                  <div class="card-body">
-                    <!--begin:: the row-->
-                    <div class="row">
-                      <div class="col-lg-12 col-md-12 col-sm-12 mb-7">
-                        <!--begin::Input group-->
-                        <div class="fv-row row">
-                          <div class="col-lg-12 col-md-12 col-sm-12 mb-3">
-                            <!--begin::Label-->
-                            <label class="fs-6 fw-semibold form-label">
-                              <span>Build Services</span>
-                            </label>
-                            <!--end::Label-->
-                          </div>
-                          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                            <div class="form-check form-check-custom form-check-solid form-check-sm">
-                              <input class="form-check-input check-default" type="checkbox" value="" id="scope_work" />
-                              <label class="form-check-label" for="scope_work">
-                                Scope Of Work
-                              </label>
-                            </div>
-                          </div>
-                          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                            <div class="form-check form-check-custom form-check-solid form-check-sm">
-                              <input class="form-check-input check-default" type="checkbox" value=""
-                                id="tender_management" />
-                              <label class="form-check-label" for="tender_management">
-                                Tender Management
-                              </label>
-                            </div>
-                          </div>
-                          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                            <div class="form-check form-check-custom form-check-solid form-check-sm">
-                              <input class="form-check-input check-default" type="checkbox" value=""
-                                id="on_site_assista_mouth" />
-                              <label class="form-check-label" for="on_site_assista_mouth">
-                                On Site Assistance Once a Mouth
-                              </label>
-                            </div>
-                          </div>
-                          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                            <div class="form-check form-check-custom form-check-solid form-check-sm">
-                              <input class="form-check-input check-default" type="checkbox" value=""
-                                id="interior_elevation_week" />
-                              <label class="form-check-label" for="interior_elevation_week">
-                                On Site Assistance Once a Week
-                              </label>
-                            </div>
-                          </div>
-                          <div class="col-lg-6 col-md-6 col-sm-12 mb-4 mb-md-0">
-                            <div class="form-check form-check-custom form-check-solid form-check-sm">
-                              <input class="form-check-input check-default" type="checkbox" value=""
-                                id="photo_record" />
-                              <label class="form-check-label" for="photo_record">
-                                Photographic Record
-                              </label>
-                            </div>
-                          </div>
-                          <div class="col-lg-6 col-md-6 col-sm-12">
-                            <div class="form-check form-check-custom form-check-solid form-check-sm">
-                              <input class="form-check-input check-default" type="checkbox" value=""
-                                id="meet_mint_sumr" />
-                              <label class="form-check-label" for="photo_record">
-                                Meeting Minute & Summary
-                              </label>
-                            </div>
-                          </div>
-                        </div>
-                        <!--end::Input group-->
-                      </div>
-                      <div class="col-lg-12 col-md-12 col-sm-12 mb-7">
-                        <!--begin::Input group-->
-                        <div class="fv-row row">
-                          <div class="col-lg-12 col-md-12 col-sm-12 mb-3">
-                            <!--begin::Label-->
-                            <label class="fs-6 fw-semibold form-label">
-                              <span>3D Party Services</span>
-                            </label>
-                            <!--end::Label-->
-                          </div>
-                          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                            <div class="form-check form-check-custom form-check-solid form-check-sm">
-                              <input class="form-check-input check-default" type="checkbox" value="" id="stru_eng" />
-                              <label class="form-check-label" for="stru_eng">
-                                Structural Engineer
-                              </label>
-                            </div>
-                          </div>
-                          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                            <div class="form-check form-check-custom form-check-solid form-check-sm">
-                              <input class="form-check-input check-default" type="checkbox" value="" id="buid_arg" />
-                              <label class="form-check-label" for="buid_arg">
-                                Build Over Agreement
-                              </label>
-                            </div>
-                          </div>
-                          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                            <div class="form-check form-check-custom form-check-solid form-check-sm">
-                              <input class="form-check-input check-default" type="checkbox" value="" id="party_survy" />
-                              <label class="form-check-label" for="party_survy">
-                                Party Will Surveyor
-                              </label>
-                            </div>
-                          </div>
-                          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                            <div class="form-check form-check-custom form-check-solid form-check-sm">
-                              <input class="form-check-input check-default" type="checkbox" value=""
-                                id="planing_consultant" />
-                              <label class="form-check-label" for="planing_consultant">
-                                Planning Consultant
-                              </label>
-                            </div>
-                          </div>
-                          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                            <div class="form-check form-check-custom form-check-solid form-check-sm">
-                              <input class="form-check-input check-default" type="checkbox" value=""
-                                id="heritage_consult" />
-                              <label class="form-check-label" for="heritage_consult">
-                                Heritage Consultant
-                              </label>
-                            </div>
-                          </div>
-                          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                            <div class="form-check form-check-custom form-check-solid form-check-sm">
-                              <input class="form-check-input check-default" type="checkbox" value=""
-                                id="approv_inspector" />
-                              <label class="form-check-label" for="approv_inspector">
-                                Approved Inspector
-                              </label>
-                            </div>
-                          </div>
-                          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                            <div class="form-check form-check-custom form-check-solid form-check-sm">
-                              <input class="form-check-input check-default" type="checkbox" value="" id="d" />
-                              <label class="form-check-label" for="approv_inspector">
-                                Daylight
-                              </label>
-                            </div>
-                          </div>
-                        </div>
-                        <!--end::Input group-->
-                      </div>
-                    </div>
-                    <!--end:: the row-->
-                  </div>
-                </div>
-                <!--begin:: the card-->
+
               </div>
               <!--end:: the column-->
               <!--begin:: the column-->
-              <div class="col-lg-6 col-md-6 col-sm-12">
-                <!--begin:: the card-->
-                <div class="card card-bordered mb-4">
-                  <div class="card-body">
-                    <!--begin:: the row-->
+              <div class="col-lg-6 col-md-6 col-sm-12 mb-7">
+                <h3 class="mb-7">Service Details</h3>
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12 mb-5">
+                    <label class="fs-6 fw-semibold mb-6">Service Stages Completed</label>
                     <div class="row">
-                      <!--begin:: the row-->
+                      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-check form-check-custom form-check-solid form-check-sm">
+                          <input class="form-check-input check-default" type="checkbox" id="flexRadioLg" />
+                          <label class="form-check-label" for="flexRadioLg">
+                            Preparation & Survey
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-check form-check-custom form-check-solid form-check-sm">
+                          <input class="form-check-input check-default" type="checkbox" id="flexRadioLg1" />
+                          <label class="form-check-label" for="flexRadioLg1">
+                            Design & Planning
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-check form-check-custom form-check-solid form-check-sm">
+                          <input class="form-check-input check-default" type="checkbox" id="flexRadioLg2" />
+                          <label class="form-check-label" for="flexRadioLg2">
+                            Technical & Tender
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-check form-check-custom form-check-solid form-check-sm">
+                          <input class="form-check-input check-default" type="checkbox" id="flexRadioLg3" />
+                          <label class="form-check-label" for="flexRadioLg3">
+                            Builder Chosen/Site-Prep
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-check form-check-custom form-check-solid form-check-sm">
+                          <input class="form-check-input check-default" type="checkbox" id="flexRadioLg4" />
+                          <label class="form-check-label" for="flexRadioLg4s">
+                            On-site/Preparation
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12 mb-5">
+                    <label class="fs-6 fw-semibold mb-6">Design Services Agreed</label>
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-check form-check-custom form-check-solid form-check-sm">
+                          <input class="form-check-input check-default" type="checkbox" id="basic" />
+                          <label class="form-check-label" for="basic">
+                            Basic
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-check form-check-custom form-check-solid form-check-sm">
+                          <input class="form-check-input check-default" type="checkbox" id="plus" />
+                          <label class="form-check-label" for="plus">
+                            Plus
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-check form-check-custom form-check-solid form-check-sm">
+                          <input class="form-check-input check-default" type="checkbox" id="premimum" />
+                          <label class="form-check-label" for="premimum">
+                            Premium
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 ">
+                        <div class="form-check form-check-custom form-check-solid form-check-sm">
+                          <input class="form-check-input check-default" type="checkbox" id="artisan" />
+                          <label class="form-check-label" for="artisan">
+                            Artisan
+                          </label>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12 mb-5">
+                    <label class="fs-6 fw-semibold mb-6">Build Services Agreed</label>
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-check form-check-custom form-check-solid form-check-sm">
+                          <input class="form-check-input check-default" type="checkbox" id="basic1" />
+                          <label class="form-check-label" for="basic1">
+                            Basic
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-check form-check-custom form-check-solid form-check-sm">
+                          <input class="form-check-input check-default" type="checkbox" id="plus1" />
+                          <label class="form-check-label" for="plus1">
+                            Plus
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-check form-check-custom form-check-solid form-check-sm">
+                          <input class="form-check-input check-default" type="checkbox" id="premimum1" />
+                          <label class="form-check-label" for="premimum1">
+                            Premium
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 ">
+                        <div class="form-check form-check-custom form-check-solid form-check-sm">
+                          <input class="form-check-input check-default" type="checkbox" id="artisan1" />
+                          <label class="form-check-label" for="artisan1">
+                            Artisan
+                          </label>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12 mb-5">
+                    <label class="fs-6 fw-semibold mb-6">Additional Services Agreed</label>
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-check form-check-custom form-check-solid form-check-sm">
+                          <input class="form-check-input check-default" type="checkbox" id="elayout" />
+                          <label class="form-check-label" for="elayout">
+                            Electrical Layout
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-check form-check-custom form-check-solid form-check-sm">
+                          <input class="form-check-input check-default" type="checkbox" id="3dmodel" />
+                          <label class="form-check-label" for="3dmodel">
+                            3D Model
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-check form-check-custom form-check-solid form-check-sm">
+                          <input class="form-check-input check-default" type="checkbox" id="3dvisual" />
+                          <label class="form-check-label" for="3dvisual">
+                            3D Visualisation
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-check form-check-custom form-check-solid form-check-sm">
+                          <input class="form-check-input check-default" type="checkbox" id="icdp" />
+                          <label class="form-check-label" for="icdp">
+                            Interior Concept Design Page
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 mb-4 ">
+                        <div class="form-check form-check-custom form-check-solid form-check-sm">
+                          <input class="form-check-input check-default" type="checkbox" id="brd" />
+                          <label class="form-check-label" for="brd">
+                            Building Regs Drawing
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 mb-4 ">
+                        <div class="form-check form-check-custom form-check-solid form-check-sm">
+                          <input class="form-check-input check-default" type="checkbox" id="psubmision" />
+                          <label class="form-check-label" for="psubmision">
+                            Planning Resubmission
+                          </label>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12 mb-5">
+                    <label class="fs-6 fw-semibold mb-6">3rd Party Consultants Appointed</label>
+                    <div class="row">
                       <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 mb-7">
-                          <!--begin::Input group-->
-                          <div class="fv-row">
-                            <!--begin::Label-->
-                            <label class="fs-6 fw-semibold form-label mt-3">
-                              <span class="required">Project Title</span>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                          <div class="form-check form-check-custom form-check-solid form-check-sm">
+                            <input class="form-check-input check-default" type="checkbox" id="stru_eng" />
+                            <label class="form-check-label" for="stru_eng">
+                              Structural Engineer
                             </label>
-                            <!--end::Label-->
-                            <!--begin::Input-->
-                            <input type="text" class="form-control" name="project_title" value="" />
-                            <!--end::Input-->
                           </div>
-                          <!--end::Input group-->
                         </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 mb-7">
-                          <!--begin::Input group-->
-                          <div class="fv-row">
-                            <!--begin::Label-->
-                            <label class="fs-6 fw-semibold form-label mt-3">
-                              <span class="required">Client Name</span>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                          <div class="form-check form-check-custom form-check-solid form-check-sm">
+                            <input class="form-check-input check-default" type="checkbox" id="hr_cons" />
+                            <label class="form-check-label" for="hr_cons">
+                              Heritage Consultant
                             </label>
-                            <!--end::Label-->
-                            <!--begin::Input-->
-                            <input type="text" class="form-control" name="clent_name" value="" />
-                            <!--end::Input-->
                           </div>
-                          <!--end::Input group-->
                         </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 mb-7">
-                          <!--begin::Input group-->
-                          <div class="fv-row">
-                            <!--begin::Label-->
-                            <label class="fs-6 fw-semibold form-label mt-3">
-                              <span>Client Email</span>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                          <div class="form-check form-check-custom form-check-solid form-check-sm">
+                            <input class="form-check-input check-default" type="checkbox" id="party_survy" />
+                            <label class="form-check-label" for="party_survy">
+                              Party Will Surveyor
                             </label>
-                            <!--end::Label-->
-                            <!--begin::Input group-->
-                            <div class="input-group mb-5">
-                              <span class="input-group-text" id="basic-addon1">
-                                <i class="ki-duotone ki-sms">
-                                  <span class="path1"></span>
-                                  <span class="path2"></span>
-                                </i>
-                              </span>
-                              <input type="email" class="form-control" aria-label="Username"
-                                aria-describedby="basic-addon1" />
-                            </div>
-                            <!--end::Input group-->
                           </div>
-                          <!--end::Input group-->
                         </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 mb-7">
-                          <!--begin::Input group-->
-                          <div class="fv-row">
-                            <!--begin::Label-->
-                            <label class="fs-6 fw-semibold form-label mt-3">
-                              <span>Project Description</span>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                          <div class="form-check form-check-custom form-check-solid form-check-sm">
+                            <input class="form-check-input check-default" type="checkbox" id="arbo_cultlist" />
+                            <label class="form-check-label" for="arbo_cultlist">
+                              Arboriculturalist
                             </label>
-                            <!--end::Label-->
-                            <!--begin::Input group-->
-                            <textarea class="form-control" aria-label="With textarea" rows="2"></textarea>
-                            <!--end::Input group-->
                           </div>
-                          <!--end::Input group-->
                         </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 mb-7">
-                          <!--begin::Input group-->
-                          <div class="fv-row">
-                            <!--begin::Label-->
-                            <label class="fs-6 fw-semibold form-label mt-3">
-                              <span class="required">Location</span>
+
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                          <div class="form-check form-check-custom form-check-solid form-check-sm">
+                            <input class="form-check-input check-default" type="checkbox" id="approv_inspector" />
+                            <label class="form-check-label" for="approv_inspector">
+                              Approved Inspector /BCO
                             </label>
-                            <!--end::Label-->
-                            <!--begin::Input group-->
-                            <div class="input-group mb-5">
-                              <span class="input-group-text" id="basic-addon1">
-                                <i class="ki-duotone ki-geolocation">
-                                  <span class="path1"></span>
-                                  <span class="path2"></span>
-                                </i>
-                              </span>
-                              <input type="email" class="form-control" aria-label="Username"
-                                aria-describedby="basic-addon1" />
-                            </div>
-                            <!--end::Input group-->
                           </div>
-                          <!--end::Input group-->
                         </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 mb-7">
-                          <!--begin::Input group-->
-                          <div class="fv-row">
-                            <!--begin::Label-->
-                            <label class="fs-6 fw-semibold form-label mt-3">
-                              <span class="required">Project Type</span>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                          <div class="form-check form-check-custom form-check-solid form-check-sm">
+                            <input class="form-check-input check-default" type="checkbox" id="plan_consult" />
+                            <label class="form-check-label" for="plan_consult">
+                              Planning Consultant
                             </label>
-                            <!--end::Label-->
-                            <!--begin::Input group-->
-                            <select class="form-select" aria-label="Select example" data-placeholder="">
-                              <option disabled selected></option>
-                              <option value="1">One</option>
-                              <option value="2">Two</option>
-                              <option value="3">Three</option>
-                            </select>
-                            <!--end::Input group-->
                           </div>
-                          <!--end::Input group-->
                         </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 mb-7">
-                          <!--begin::Input group-->
-                          <div class="fv-row">
-                            <!--begin::Label-->
-                            <label class="fs-6 fw-semibold form-label mt-3">
-                              <span class="required">Project Plannig Status</span>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                          <div class="form-check form-check-custom form-check-solid form-check-sm">
+                            <input class="form-check-input check-default" type="checkbox" id="mesur_build_sur" />
+                            <label class="form-check-label" for="mesur_build_sur">
+                              Measured Building Survey
                             </label>
-                            <!--end::Label-->
-                            <!--begin::Input group-->
-                            <select class="form-select" aria-label="Select example" data-placeholder="">
-                              <option disabled selected></option>
-                              <option value="1">One</option>
-                              <option value="2">Two</option>
-                              <option value="3">Three</option>
-                            </select>
-                            <!--end::Input group-->
                           </div>
-                          <!--end::Input group-->
                         </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 mb-7">
-                          <!--begin::Input group-->
-                          <div class="fv-row">
-                            <!--begin::Label-->
-                            <label class="fs-6 fw-semibold form-label mt-3">
-                              <span class="required">Project Status</span>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                          <div class="form-check form-check-custom form-check-solid form-check-sm">
+                            <input class="form-check-input check-default" type="checkbox" id="drainage" />
+                            <label class="form-check-label" for="drainage">
+                              Drainage Surveyor
                             </label>
-                            <!--end::Label-->
-                            <!--begin::Input group-->
-                            <select class="form-select" aria-label="Select example" data-placeholder="">
-                              <option disabled selected></option>
-                              <option value="1">One</option>
-                              <option value="2">Two</option>
-                              <option value="3">Three</option>
-                            </select>
-                            <!--end::Input group-->
                           </div>
-                          <!--end::Input group-->
                         </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12">
-                          <!--begin::Input group-->
-                          <div class="fv-row">
-                            <!--begin::Label-->
-                            <label class="fs-6 fw-semibold form-label mt-3">
-                              <span class="required">Estimated Completion Date</span>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                          <div class="form-check form-check-custom form-check-solid form-check-sm">
+                            <input class="form-check-input check-default" type="checkbox" id="d_ligh_ass" />
+                            <label class="form-check-label" for="d_ligh_ass">
+                              Daylight / Sunlight Assessor
                             </label>
-                            <!--end::Label-->
-                            <!--begin::Input-->
-                            <div class="position-relative d-flex align-items-center">
-                              <!--begin::Icon-->
-                              <i class="ki-duotone ki-calendar fs-2 position-absolute mx-4">
-                                <span class="path1"></span>
-                                <span class="path2"></span>
-                              </i>
-                              <!--end::Icon-->
-                              <!--begin::Datepicker-->
-                              <input class="form-control ps-12 flatpickr-input" name="due_date"
-                                id="kt_datepicker_esti_date" />
-                              <!--end::Datepicker-->
-                            </div>
-                            <!--end::Input-->
                           </div>
-                          <!--end::Input group-->
                         </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                          <div class="form-check form-check-custom form-check-solid form-check-sm">
+                            <input class="form-check-input check-default" type="checkbox" id="quntity_survey" />
+                            <label class="form-check-label" for="quntity_survey">
+                              Quantity Surveyor
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                          <div class="form-check form-check-custom form-check-solid form-check-sm">
+                            <input class="form-check-input check-default" type="checkbox" id="m_e_con" />
+                            <label class="form-check-label" for="m_e_con">
+                              M&E Consultant
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                          <div class="form-check form-check-custom form-check-solid form-check-sm">
+                            <input class="form-check-input check-default" type="checkbox" id="pro_mang" />
+                            <label class="form-check-label" for="pro_mang">
+                              Project Manager
+                            </label>
+                          </div>
+                        </div>
+
+
                       </div>
-                      <!--end:: the row-->
                     </div>
-                    <!--end:: the row-->
                   </div>
-                </div>
-                <!--begin:: the card-->
-                <!--begin:: the card-->
-                <div class="card card-bordered mb-4">
-                  <div class="card-body">
-                    <!--begin:: the row-->
+                  <div class="col-lg-12 col-md-12 col-sm-12 mb-5">
+                    <label class="fs-6 fw-semibold mb-6">Types of Planning Application Chosen</label>
                     <div class="row">
-                      <div class="col-lg-12 col-md-12 col-sm-12 mb-7">
-                        <!--begin::Input group-->
-                        <div class="fv-row row">
-                          <div class="col-lg-12 col-md-12 col-sm-12 mb-3">
-                            <!--begin::Label-->
-                            <label class="fs-6 fw-semibold form-label">
-                              <span class="required">Project Stages</span>
-                            </label>
-                            <!--end::Label-->
-                          </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-check form-check-custom form-check-solid form-check-sm">
+                          <input class="form-check-input check-default" type="checkbox" id="flexRadioLg" />
+                          <label class="form-check-label" for="flexRadioLg">
+                            House Holder planning
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-check form-check-custom form-check-solid form-check-sm">
+                          <input class="form-check-input check-default" type="checkbox" id="flexRadioLg2" />
+                          <label class="form-check-label" for="flexRadioLg2">
+                            Permitted Development
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-check form-check-custom form-check-solid form-check-sm">
+                          <input class="form-check-input check-default" type="checkbox" id="flexRadioLg1" />
+                          <label class="form-check-label" for="flexRadioLg1">
+                            Larger Home Extension Scheme
+                          </label>
+                        </div>
+                      </div>
 
-                          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                            <div class="form-check form-check-custom form-check-solid form-check-sm">
-                              <input class="form-check-input check-default" type="checkbox" value="" id="pre_surve" />
-                              <label class="form-check-label" for="pre_surve">
-                                Preparation & Survey
-                              </label>
-                            </div>
-                          </div>
-                          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                            <div class="form-check form-check-custom form-check-solid form-check-sm">
-                              <input class="form-check-input check-default" type="checkbox" value=""
-                                id="buil_chose_site" />
-                              <label class="form-check-label" for="buil_chose_site">
-                                Builder Chosen/ Site-Prep
-                              </label>
-                            </div>
-                          </div>
-                          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                            <div class="form-check form-check-custom form-check-solid form-check-sm">
-                              <input class="form-check-input check-default" type="checkbox" value=""
-                                id="design_planning" />
-                              <label class="form-check-label" for="design_planning">
-                                Design & Planning
-                              </label>
-                            </div>
-                          </div>
-                          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                            <div class="form-check form-check-custom form-check-solid form-check-sm">
-                              <input class="form-check-input check-default" type="checkbox" value=""
-                                id="on_site_project" />
-                              <label class="form-check-label" for="on_site_project">
-                                On-Site/Project Assistance
-                              </label>
-                            </div>
-                          </div>
-                          <div class="col-lg-6 col-md-6 col-sm-12">
-                            <div class="form-check form-check-custom form-check-solid form-check-sm">
-                              <input class="form-check-input check-default" type="checkbox" value=""
-                                id="technical_tender" />
-                              <label class="form-check-label" for="technical_tender">
-                                Technical & Tender
-                              </label>
-                            </div>
-                          </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-check form-check-custom form-check-solid form-check-sm">
+                          <input class="form-check-input check-default" type="checkbox" id="flexRadioLg3" />
+                          <label class="form-check-label" for="flexRadioLg3">
+                            Listed Building Consent
+                          </label>
                         </div>
-                        <!--end::Input group-->
                       </div>
-                      <div class="col-lg-12 col-md-12 col-sm-12">
-                        <!--begin::Input group-->
-                        <div class="fv-row row">
-                          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                            <label class="fs-6 fw-semibold mb-2">Budget</label>
-                            <div class="input-group mb-5">
-                              <span class="input-group-text bg-white">£</span>
-                              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" />
-                            </div>
-                          </div>
-                          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                            <label class="fs-6 fw-semibold mb-2">Construction Value</label>
-                            <div class="input-group mb-5">
-                              <span class="input-group-text bg-white">£</span>
-                              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" />
-                            </div>
-                          </div>
-                          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                            <label class="fs-6 fw-semibold mb-2">Build Free</label>
-                            <div class="input-group mb-5">
-                              <span class="input-group-text bg-white">£</span>
-                              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" />
-                            </div>
-                          </div>
-                          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                            <label class="fs-6 fw-semibold mb-2">Design Free</label>
-                            <div class="input-group mb-5">
-                              <span class="input-group-text bg-white">£</span>
-                              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" />
-                            </div>
-                          </div>
-                          <div class="col-lg-12 col-md-12 col-sm-12 mb-4 mb-md-0">
-                            <label class="fs-6 fw-semibold mb-2">Commission</label>
-                            <div class="input-group mb-5">
-                              <span class="input-group-text bg-white">£</span>
-                              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" />
-                            </div>
-                          </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-check form-check-custom form-check-solid form-check-sm">
+                          <input class="form-check-input check-default" type="checkbox" id="flexRadioLg4" />
+                          <label class="form-check-label" for="flexRadioLg4s">
+                            Licence To Alter
+                          </label>
                         </div>
-                        <!--end::Input group-->
                       </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-check form-check-custom form-check-solid form-check-sm">
+                          <input class="form-check-input check-default" type="checkbox" id="no_application" />
+                          <label class="form-check-label" for="no_application">
+                            No Application
+                          </label>
+                        </div>
+                      </div>
+
                     </div>
-                    <!--end:: the row-->
                   </div>
-                </div>
-                <!--begin:: the card-->
-                <!--begin:: the card-->
-                <div class="card card-bordered mb-4">
-                  <div class="card-body">
-                    <!--begin:: the row-->
+                  <div class="col-lg-12 col-md-12 col-sm-12 mb-5">
+                    <label class="fs-6 fw-semibold mb-6">Additional Planning Statements & Reports Required</label>
                     <div class="row">
-                      <div class="col-lg-12 col-md-12 col-sm-12 mb-7">
-                        <!--begin::Input group-->
-                        <div class="fv-row row">
-                          <div class="col-lg-12 col-md-12 col-sm-12 mb-3">
-                            <!--begin::Label-->
-                            <label class="fs-6 fw-semibold form-label">
-                              <span class="required">Project Stages</span>
-                            </label>
-                            <!--end::Label-->
-                          </div>
-
-                          <div class="col-lg-12 col-md-12 col-sm-12 mb-4">
-                            <select class="form-select" aria-label="Select example" data-placeholder="">
-                              <option disabled selected></option>
-                              <option value="1">One</option>
-                              <option value="2">Two</option>
-                              <option value="3">Three</option>
-                            </select>
-                          </div>
-                        </div>
-                        <!--end::Input group-->
-                      </div>
-                      <div class="col-lg-12 col-md-12 col-sm-12">
-                        <div class="row">
-                          <div class="col-lg-3 col-md-4 col-sm-12 mb-3 mb-md-0">
-                            <div class="image-input image-input-outline" data-kt-image-input="true"
-                              style="background-image: url(/assets/media/svg/avatars/blank.svg);">
-                              <!--begin::Image preview wrapper-->
-                              <div class="image-input-wrapper w-125px h-125px"
-                                style="background-image: url(/assets/media/avatars/300-3.png);"></div>
-                              <!--end::Image preview wrapper-->
-
-                              <!--begin::Edit button-->
-                              <label
-                                class="btn btn-icon btn-circle btn-color-muted btn-active-color-primary w-25px h-25px bg-body shadow"
-                                data-kt-image-input-action="change" data-bs-toggle="tooltip" data-bs-dismiss="click"
-                                title="Change avatar">
-                                <i class="ki-duotone ki-pencil fs-6"><span class="path1"></span><span
-                                    class="path2"></span></i>
-
-                                <!--begin::Inputs-->
-                                <input type="file" name="avatar" accept=".png, .jpg, .jpeg" multiple="multiple" />
-                                <input type="hidden" name="avatar_remove" />
-                                <!--end::Inputs-->
-                              </label>
-                              <!--end::Edit button-->
-
-                              <!--begin::Remove button-->
-                              <span
-                                class="btn btn-icon btn-circle btn-color-muted btn-active-color-primary w-25px h-25px bg-body shadow"
-                                data-kt-image-input-action="remove" data-bs-toggle="tooltip" data-bs-dismiss="click"
-                                title="Remove avatar">
-                                <i class="ki-outline ki-cross fs-3"></i>
-                              </span>
-                              <!--end::Remove button-->
-                            </div>
-                            <!--end::Image input-->
-                          </div>
-                          <div class="col-lg-9 col-md-8 col-sm-12">
-                            <div class="tns tns-default" style="direction: ltr;">
-                              <!--begin::Slider-->
-                              <div data-tns="true" data-tns-loop="false" data-tns-swipe-angle="false"
-                                data-tns-speed="1000" data-tns-autoplay="true" data-tns-autoplay-timeout="10000"
-                                data-tns-controls="true" data-tns-nav="false" data-tns-items="3" data-tns-center="false"
-                                data-tns-slide-by="true" data-tns-dots="false"
-                                data-tns-prev-button="#kt_team_slider_prev1"
-                                data-tns-next-button="#kt_team_slider_next1">
-                                <!--begin::Item-->
-                                <div class="text-center">
-                                  <div class="symbol symbol-100px">
-                                    <img src="assets/media/projects/img-1.jpg" class="" alt="" />
-                                  </div>
-                                </div>
-                                <!--end::Item-->
-                                <!--begin::Item-->
-                                <div class="text-center">
-                                  <div class="symbol symbol-100px">
-                                    <img src="assets/media/projects/img-2.jpg" class="" alt="" />
-                                  </div>
-                                </div>
-                                <!--end::Item-->
-                                <!--begin::Item-->
-                                <div class="text-center">
-                                  <div class="symbol symbol-100px">
-                                    <img src="assets/media/projects/img-3.jpg" class="" alt="" />
-                                  </div>
-                                </div>
-                                <!--end::Item-->
-                                <!--begin::Item-->
-                                <div class="text-center">
-                                  <div class="symbol symbol-100px">
-                                    <img src="assets/media/projects/img-1.jpg" class="" alt="" />
-                                  </div>
-                                </div>
-                                <!--end::Item-->
-                                ...
-                              </div>
-                              <!--end::Slider-->
-
-                              <!--begin::Slider button-->
-                              <button class="btn btn-icon btn-active-theme-black" id="kt_team_slider_prev1">
-                                <span class="svg-icon fs-2x">
-                                  <i class="ki-duotone ki-left fs-2x"></i>
-                                </span>
-                              </button>
-                              <!--end::Slider button-->
-
-                              <!--begin::Slider button-->
-                              <button class="btn btn-icon btn-active-theme-black" id="kt_team_slider_next1">
-                                <span class="svg-icon fs-2x">
-                                  <i class="ki-duotone ki-right fs-2x"></i>
-                                </span>
-                              </button>
-                              <!--end::Slider button-->
-                            </div>
-                          </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-check form-check-custom form-check-solid form-check-sm">
+                          <input class="form-check-input check-default" type="checkbox" id="design_access" />
+                          <label class="form-check-label" for="design_access">
+                            Design and Access Statements
+                          </label>
                         </div>
                       </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-check form-check-custom form-check-solid form-check-sm">
+                          <input class="form-check-input check-default" type="checkbox" id="fire_statergy" />
+                          <label class="form-check-label" for="fire_statergy">
+                            Fire & Safty Statergy
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-check form-check-custom form-check-solid form-check-sm">
+                          <input class="form-check-input check-default" type="checkbox" id="heritage_statement" />
+                          <label class="form-check-label" for="heritage_statement">
+                            Heritage Statement
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-check form-check-custom form-check-solid form-check-sm">
+                          <input class="form-check-input check-default" type="checkbox" id="food_risk_assessment" />
+                          <label class="form-check-label" for="food_risk_assessment">
+                            Food Risk Assessment
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-check form-check-custom form-check-solid form-check-sm">
+                          <input class="form-check-input check-default" type="checkbox" id="meth_cons_statem" />
+                          <label class="form-check-label" for="meth_cons_statem">
+                            Method & Construction Statement
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-check form-check-custom form-check-solid form-check-sm">
+                          <input class="form-check-input check-default" type="checkbox" id="day_assessment" />
+                          <label class="form-check-label" for="day_assessment">
+                            Day & Sunlight Assessment
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-check form-check-custom form-check-solid form-check-sm">
+                          <input class="form-check-input check-default" type="checkbox" id="sut_assement" />
+                          <label class="form-check-label" for="sut_assement">
+                            Sutainable Drainage Assessment
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-check form-check-custom form-check-solid form-check-sm">
+                          <input class="form-check-input check-default" type="checkbox" id="sustable_design" />
+                          <label class="form-check-label" for="sustable_design">
+                            Sustainable Design & Construction Statement
+                          </label>
+                        </div>
+                      </div>
+
                     </div>
-                    <!--end:: the row-->
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12 mb-5">
+                    <label class="fs-6 fw-semibold mb-6">Types of Building Regulations Application Chosen</label>
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-check form-check-custom form-check-solid form-check-sm">
+                          <input class="form-check-input check-default" type="checkbox" id="ful_plan_app" />
+                          <label class="form-check-label" for="ful_plan_app">
+                            Full Plans Application
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-check form-check-custom form-check-solid form-check-sm">
+                          <input class="form-check-input check-default" type="checkbox" id="build_notice" />
+                          <label class="form-check-label" for="build_notice">
+                            Building Notice
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-check form-check-custom form-check-solid form-check-sm">
+                          <input class="form-check-input check-default" type="checkbox" id="regularsation" />
+                          <label class="form-check-label" for="regularsation">
+                            Regularisation
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-check form-check-custom form-check-solid form-check-sm">
+                          <input class="form-check-input check-default" type="checkbox" id="no_application" />
+                          <label class="form-check-label" for="no_application">
+                            No Application
+                          </label>
+                        </div>
+                      </div>
+
+
+                    </div>
                   </div>
                 </div>
-                <!--begin:: the card-->
+                <!--end:: the column-->
               </div>
-              <!--end:: the column-->
-            </div>
-            <!--end:: the row-->
-          </div>
+              <!--begin: The column-->
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <!--begin::Dropzone-->
+                <div class="dropzone bg-gray-200 border-secondary" id="kt_dropzonejs_example_2">
+                  <!--begin::Message-->
+                  <div class="dz-message needsclick">
+                    <i class="ki-duotone ki-file-up fs-3x text-theme-black"><span class="path1"></span><span
+                        class="path2"></span></i>
 
+                    <!--begin::Info-->
+                    <div class="ms-4">
+                      <h3 class="fs-5 fw-bold text-gray-900 mb-1">Drop files here or click to upload.</h3>
+                      <span class="fs-7 fw-semibold text-gray-500">Upload up to 10 files</span>
+                    </div>
+                    <!--end::Info-->
+                  </div>
+                </div>
+                <!--end::Dropzone-->
+              </div>
+              <!--end: the column-->
+              <!--end:: the row-->
+            </div>
+          </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-light rounded-0 w-md-225px" data-bs-dismiss="modal"
               aria-label="Close">Close</button>
@@ -4693,7 +4347,7 @@
   <div class="modal fade" tabindex="-1" id="kt_modal_new_phase">
     <div class="modal-dialog modal-dialog-centered mw-50">
       <div class="modal-content">
-        <form id="kt_ecommerce_settings_general_form" class="form" action="#">
+        <form id="kt_ecommerce_settings_general_form" class="form">
           <div class="modal-header">
             <h3 class="modal-title">Add Project Phase</h3>
             <!--begin::Close-->
@@ -4706,7 +4360,7 @@
                 <!--begin::Input group-->
                 <div class="fv-row">
                   <!--begin::Label-->
-                  <label class="fs-6 fw-semibold form-label mt-3">
+                  <label class="fs-6 fw-semibold form-label ">
                     <span class="required">Select Phase</span>
                   </label>
                   <!--end::Label-->
@@ -4719,7 +4373,8 @@
                   </select>
                   <!--end::Input-->
                   <div class="text-end mt-2">
-                    <button class="text-gray-600 bg-transparent border-0 p-0">Add Customised Phase</button>
+                    <button type="button" class="text-gray-600 bg-transparent border-0 p-0 cursor-pointer"
+                      data-bs-stacked-modal="#kt_modal_customised_phase">Add Customised Phase</button>
                   </div>
                 </div>
                 <!--end::Input group-->
@@ -4728,7 +4383,7 @@
                 <!--begin::Input group-->
                 <div class="fv-row">
                   <!--begin::Label-->
-                  <label class="fs-6 fw-semibold form-label mt-3">
+                  <label class="fs-6 fw-semibold form-label ">
                     <span>Select Task</span>
                   </label>
                   <!--end::Label-->
@@ -4741,7 +4396,8 @@
                   </select>
 
                   <div class="text-end mt-2">
-                    <button class="text-gray-600 bg-transparent border-0 p-0">Add Customised Task</button>
+                    <button class="text-gray-600 bg-transparent border-0 p-0"
+                      data-bs-stacked-modal="#kt_modal_customised_task">Add Customised Task</button>
                   </div>
                   <!--end::Input-->
                 </div>
@@ -4752,7 +4408,7 @@
                 <!--begin::Input group-->
                 <div class="fv-row">
                   <!--begin::Label-->
-                  <label class="fs-6 fw-semibold form-label mt-3">
+                  <label class="fs-6 fw-semibold form-label ">
                     <span>Task Description</span>
                   </label>
                   <!--end::Label-->
@@ -4767,7 +4423,7 @@
                 <!--begin::Input group-->
                 <div class="fv-row">
                   <!--begin::Label-->
-                  <label class="fs-6 fw-semibold form-label mt-3">
+                  <label class="fs-6 fw-semibold form-label ">
                     <span>Task Status</span>
                   </label>
                   <!--end::Label-->
@@ -4945,6 +4601,105 @@
     </div>
   </div>
   <!-- end edit profile modal-->
+  <!-- Start Customised model start-->
+  <div class="modal fade" tabindex="-1" id="kt_modal_customised_phase">
+    <div class="modal-dialog">
+      <form id="kt_ecommerce_settings_general_form1" class="form">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Add Customized Phase</h3>
+
+          </div>
+
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 mb-7">
+                <!--begin::Input group-->
+                <div class="fv-row">
+                  <!--begin::Label-->
+                  <label class="fs-6 fw-semibold form-label ">
+                    <span class="required">Enter Customized Phase Name*</span>
+                  </label>
+                  <!--end::Label-->
+                  <!--begin::Input group-->
+                  <textarea class="form-control" aria-label="With textarea" rows="4"></textarea>
+                  <!--end::Input group-->
+                </div>
+                <!--end::Input group-->
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer ">
+            <div class="row w-100">
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <button type="button" class="btn btn-light rounded-0 w-100" data-bs-dismiss="modal"
+                  aria-label="Close">Close</button>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <button type="button" class="btn btn-theme-black rounded-0 w-100">Save</button>
+              </div>
+
+            </div>
+
+
+
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- End customised model end-->
+  <!-- Start Customised model start-->
+  <div class="modal fade" tabindex="-1" id="kt_modal_customised_task">
+    <div class="modal-dialog ">
+      <form id="kt_ecommerce_settings_general_form1" class="form">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Add Customized Task</h3>
+
+          </div>
+
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 mb-7">
+                <!--begin::Input group-->
+                <div class="fv-row">
+                  <!--begin::Label-->
+                  <label class="fs-6 fw-semibold form-label ">
+                    <span class="required">Enter Customized Task Name</span>
+                  </label>
+                  <!--end::Label-->
+                  <!--begin::Input group-->
+                  <textarea class="form-control" aria-label="With textarea" rows="4"></textarea>
+                  <!--end::Input group-->
+                </div>
+                <!--end::Input group-->
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer ">
+            <div class="row w-100">
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <button type="button" class="btn btn-light rounded-0 w-100" data-bs-dismiss="modal"
+                  aria-label="Close">Close</button>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <button type="button" class="btn btn-theme-black rounded-0 w-100">Save</button>
+              </div>
+
+            </div>
+
+
+
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- End customised model end-->
+
   <!--end::Scrolltop-->
   <!-- End of Page -->
   <!-- Scripts -->
@@ -4954,63 +4709,124 @@
   <script src="assets/plugins/global/plugins.bundle.js"></script>
   <script src="assets/js/scripts.bundle.js"></script>
   <script src="assets/js/custom/project/project.js"></script>
+  <script src="assets/js/two_modal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/plugins/monthSelect/index.js"></script>
   <!--begin::Vendors Javascript(used for this page only)-->
   <!-- <script src="assets/plugins/custom/datatables/datatables.bundle.js"></script> -->
   <!-- End of Scripts -->
 
   <!--begin::Custom Javascript(used for this page only)-->
   <script>
+
     $("#kt_datepicker_1").flatpickr({
-      info: false,
-      lengthChange: false,
+      dateFormat: "Y-m",
+      altInput: false,
+      plugins: [
+        new monthSelectPlugin({
+          shorthand: true,
+          dateFormat: "Y-m",
+          altFormat: "Y-m"
+        })
+      ]
     });
     $("#kt_datepicker_2").flatpickr({
-      info: false,
-      lengthChange: false,
+      dateFormat: "Y-m",
+      altInput: false,
+      plugins: [
+        new monthSelectPlugin({
+          shorthand: true,
+          dateFormat: "Y-m",
+          altFormat: "Y-m"
+        })
+      ]
     });
     $("#kt_datepicker_3").flatpickr({
-      info: false,
-      lengthChange: false,
+      dateFormat: "Y-m",
+      altInput: false,
+      plugins: [
+        new monthSelectPlugin({
+          shorthand: true,
+          dateFormat: "Y-m",
+          altFormat: "Y-m"
+        })
+      ]
     });
     $("#kt_datepicker_4").flatpickr({
-      info: false,
-      lengthChange: false,
+      dateFormat: "Y-m",
+      altInput: false,
+      plugins: [
+        new monthSelectPlugin({
+          shorthand: true,
+          dateFormat: "Y-m",
+          altFormat: "Y-m"
+        })
+      ]
     });
     $("#kt_datepicker_5").flatpickr({
-      info: false,
-      lengthChange: false,
+      dateFormat: "Y-m",
+      altInput: false,
+      plugins: [
+        new monthSelectPlugin({
+          shorthand: true,
+          dateFormat: "Y-m",
+          altFormat: "Y-m"
+        })
+      ]
     });
     $("#kt_datepicker_6").flatpickr({
-      info: false,
-      lengthChange: false,
+      dateFormat: "Y-m",
+      altInput: false,
+      plugins: [
+        new monthSelectPlugin({
+          shorthand: true,
+          dateFormat: "Y-m",
+          altFormat: "Y-m"
+        })
+      ]
+    });
+    $("#kt_datepicker_7").flatpickr({
+      dateFormat: "Y-m",
+      altInput: false,
+      plugins: [
+        new monthSelectPlugin({
+          shorthand: true,
+          dateFormat: "Y-m",
+          altFormat: "Y-m"
+        })
+      ]
+    });
+    $("#kt_datepicker_8").flatpickr({
+      dateFormat: "Y-m",
+      altInput: false,
+      plugins: [
+        new monthSelectPlugin({
+          shorthand: true,
+          dateFormat: "Y-m",
+          altFormat: "Y-m"
+        })
+      ]
     });
     $("#kt_datepicker_esti_date").flatpickr({
-      info: false,
-      lengthChange: false,
+
     });
     $("#kt_datepicker_deposit_paid").flatpickr({
-      info: false,
-      lengthChange: false,
+
     });
     $("#kt_datepicker_planning_sub").flatpickr({
-      info: false,
-      lengthChange: false,
+
     });
     $("#kt_datepicker_final_applc_aprove").flatpickr({
       info: false,
       lengthChange: false,
     });
     $("#kt_datepicker_build_serv_paid").flatpickr({
-      info: false,
-      lengthChange: false,
+
     });
     $("#kt_datepicker_project_start_site").flatpickr({
-      info: false,
-      lengthChange: false,
+
     });
     $("#kt_datepicker_practicl_completion").flatpickr({
-      info: false,
-      lengthChange: false,
+
     });
   </script>
   <script>
@@ -5028,7 +4844,27 @@
         }
       },
     });
+
+    var myDropzone = new Dropzone("#kt_dropzonejs_example_2", {
+      url: "https://keenthemes.com/scripts/void.php", // Set the url for your upload script location
+      paramName: "file", // The name that will be used to transfer the file
+      maxFiles: 10,
+      maxFilesize: 10, // MB
+      addRemoveLinks: true,
+      accept: function (file, done) {
+        if (file.name == "wow.jpg") {
+          done("Naha, you don't.");
+        } else {
+          done();
+        }
+      },
+    });
   </script>
+  <script>
+    var input2 = document.querySelector("#kt_tagify_2");
+    new Tagify(input2);
+  </script>
+
 </body>
 
 </html>
