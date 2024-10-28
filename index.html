@@ -17,6 +17,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
   <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
   <link href="assets/css/styles.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/plugins/monthSelect/style.css">
 
 </head>
 
@@ -3312,7 +3313,7 @@
               <!--end::Col-->
               <!--begin::Col-->
               <div class="col-md-6 fv-row">
-                <label class=" fs-6 fw-semibold mb-2">Completion Date</label>
+                <label class=" fs-6 fw-semibold mb-2">Estimated Completion Date</label>
                 <!--begin::Input-->
                 <div class="position-relative d-flex align-items-center">
                   <!--begin::Icon-->
@@ -3322,7 +3323,7 @@
                   </i>
                   <!--end::Icon-->
                   <!--begin::Datepicker-->
-                  <input class="form-control  ps-12 flatpickr-input" name="due_date" id="kt_datepicker_1" />
+                  <input class="form-control  ps-12 "  id="kt_datepicker_1" />
                   <!--end::Datepicker-->
                 </div>
                 <!--end::Input-->
@@ -3599,10 +3600,21 @@
 
   <!-- End of Scripts -->
   <script src="assets/js/custom/project/project.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/plugins/monthSelect/index.js"></script>
 
 
   <script>
-    $("#kt_datepicker_1").flatpickr();
+    $("#kt_datepicker_1").flatpickr({
+      dateFormat: "Y-m",
+      altInput: false,
+      plugins: [
+        new monthSelectPlugin({
+          shorthand: true,
+          dateFormat: "Y-m",
+          altFormat: "Y-m"
+        })
+      ]
+    });
     $("#kt_select_date1").flatpickr();
   </script>
 </body>

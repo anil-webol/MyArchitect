@@ -18,6 +18,7 @@
         rel="stylesheet" />
     <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/plugins/monthSelect/style.css">
 </head>
 
 <body id="kt_app_body" data-kt-app-layout="dark-sidebar" data-kt-app-header-fixed="true"
@@ -1768,182 +1769,178 @@
     <!--begin::Modal - New Target-->
 
     <div class="modal fade" tabindex="-1" id="kt_modal_new_target">
-        <div class="modal-dialog modal-dialog-centered mw-650px">
-            <div class="modal-content">
-                <form id="kt_ecommerce_settings_general_form" class="form" action="#">
-                    <div class="modal-header">
-                        <h3 class="modal-title">Add New Project</h3>
-                        <!--begin::Close-->
-
-                        <!--end::Close-->
-                    </div>
-
-                    <div class="modal-body pb-4">
-                        <!--begin::Input group-->
-                        <div class="d-flex flex-column mb-8 fv-row">
-                            <!--begin::Label-->
-                            <label class="d-flex align-items-center fs-6 fw-semibold mb-2">
-                                <span class="required">Project Title</span>
-
-                            </label>
-                            <!--end::Label-->
-                            <input type="text" class="form-control " name="project_title" />
-                        </div>
-                        <!--end::Input group-->
-                        <!--begin::Input group-->
-                        <div class="d-flex flex-column mb-8 fv-row">
-                            <!--begin::Label-->
-                            <label class="d-flex align-items-center fs-6 fw-semibold mb-2">
-                                <span class="required">Client Name</span>
-
-                            </label>
-                            <!--end::Label-->
-                            <input type="text" class="form-control " name="client_name" />
-                        </div>
-                        <!--end::Input group-->
-                        <!--begin::Input group-->
-                        <div class="d-flex flex-column mb-8 fv-row">
-                            <!--begin::Label-->
-                            <label class="d-flex align-items-center fs-6 fw-semibold mb-2">
-                                <span>Client Email</span>
-
-                            </label>
-                            <!--end::Label-->
-                            <input type="text" class="form-control " name="client_email" />
-                        </div>
-                        <!--end::Input group-->
-                        <!--begin::Input group-->
-                        <div class="d-flex flex-column mb-8 fv-row">
-                            <!--begin::Label-->
-                            <label class="d-flex align-items-center fs-6 fw-semibold mb-2">
-                                <span>Project Description</span>
-
-                            </label>
-                            <!--end::Label-->
-                            <textarea class="form-control " name="target_title" id="" cols="30" rows="5"></textarea>
-
-                        </div>
-                        <!--end::Input group-->
-                        <!--begin::Input group-->
-                        <div class="d-flex flex-column mb-8 fv-row">
-                            <!--begin::Label-->
-                            <label class="d-flex align-items-center fs-6 fw-semibold mb-2">
-                                <span class="required">Address</span>
-
-                            </label>
-                            <!--end::Label-->
-                            <textarea class="form-control " name="target_title" id="" cols="30" rows="5"></textarea>
-                        </div>
-                        <!--end::Input group-->
-                        <!--begin::Input group-->
-                        <div class="row g-9 mb-8">
-                            <!--begin::Col-->
-                            <div class="col-md-6 fv-row">
-                                <label class=" fs-6 fw-semibold mb-2">Budget</label>
-                                <div class="input-group  mb-5">
-                                    <span class="input-group-text bg-white">£</span>
-                                    <input type="text" class="form-control"
-                                        aria-label="Amount (to the nearest dollar)" />
-                                </div>
-                            </div>
-                            <!--end::Col-->
-                            <!--begin::Col-->
-                            <div class="col-md-6 fv-row">
-                                <label class=" fs-6 fw-semibold mb-2">Completion Date</label>
-                                <!--begin::Input-->
-                                <div class="position-relative d-flex align-items-center">
-                                    <!--begin::Icon-->
-                                    <i class="ki-duotone ki-calendar fs-2 position-absolute mx-4">
-                                        <span class="path1"></span>
-                                        <span class="path2"></span>
-                                    </i>
-                                    <!--end::Icon-->
-                                    <!--begin::Datepicker-->
-                                    <input class="form-control  ps-12 flatpickr-input" name="due_date"
-                                        id="kt_datepicker_1" />
-                                    <!--end::Datepicker-->
-                                </div>
-                                <!--end::Input-->
-                            </div>
-                            <!--end::Col-->
-                        </div>
-                        <!--end::Input group-->
-                        <!--begin::Input group-->
-                        <div class="d-flex flex-column mb-8 fv-row">
-                            <!--begin::Label-->
-                            <label class="d-flex align-items-center fs-6 fw-semibold mb-2">
-                                <span>Borough</span>
-
-                            </label>
-                            <!--end::Label-->
-                            <select class="form-select " data-control="select2" data-hide-search="true"
-                                name="target_assign">
-                                <option value="" selected disabled>&nbsp;</option>
-                                <option value="1">Karina Clark</option>
-                                <option value="2">Robert Doe</option>
-                                <option value="3">Niel Owen</option>
-                                <option value="4">Olivia Wild</option>
-                                <option value="5">Sean Bean</option>
-                            </select>
-                        </div>
-                        <!--end::Input group-->
-                        <!--begin::Input group-->
-                        <!--begin::Input group-->
-                        <div class="d-flex flex-column mb-8 fv-row">
-                            <!--begin::Label-->
-                            <label class="d-flex align-items-center fs-6 fw-semibold mb-2">
-                                <span>Project Type</span>
-
-                            </label>
-                            <!--end::Label-->
-                            <select class="form-select " data-control="select2" data-hide-search="true"
-                                name="target_assign">
-                                <option value="" selected disabled>&nbsp;</option>
-                                <option value="1">Karina Clark</option>
-                                <option value="2">Robert Doe</option>
-                                <option value="3">Niel Owen</option>
-                                <option value="4">Olivia Wild</option>
-                                <option value="5">Sean Bean</option>
-                            </select>
-                        </div>
-                        <!--end::Input group-->
-                        <!--begin::Input group-->
-                        <!--begin::Input group-->
-                        <div class="d-flex flex-column mb-8 fv-row">
-                            <!--begin::Label-->
-                            <label class="d-flex align-items-center fs-6 fw-semibold mb-2">
-                                <span>Property Tags</span>
-
-                            </label>
-                            <!--end::Label-->
-                            <select class="form-select " data-control="select2" data-hide-search="true"
-                                name="target_assign">
-                                <option value="" selected disabled>&nbsp;</option>
-                                <option value="1">Karina Clark</option>
-                                <option value="2">Robert Doe</option>
-                                <option value="3">Niel Owen</option>
-                                <option value="4">Olivia Wild</option>
-                                <option value="5">Sean Bean</option>
-                            </select>
-                        </div>
-                        <!--end::Input group-->
-                        <!--begin::Input group-->
-                    </div>
-
-                    <div class="modal-footer d-block ">
-                        <div class="row">
-                            <div class="col-6">
-                                <button type="button" class="btn btn-light rounded-0 w-100" data-bs-dismiss="modal"
-                                    aria-label="Close">Close</button>
-                            </div>
-                            <div class="col-6">
-                                <button type="button" class="btn btn-theme-black rounded-0 w-100">Save</button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
+      <div class="modal-dialog modal-dialog-centered mw-650px">
+        <div class="modal-content">
+          <form id="kt_ecommerce_settings_general_form" class="form" action="#">
+            <div class="modal-header">
+              <h3 class="modal-title">Add New Project</h3>
+              <!--begin::Close-->
+  
+              <!--end::Close-->
             </div>
+  
+            <div class="modal-body pb-4">
+              <!--begin::Input group-->
+              <div class="d-flex flex-column mb-8 fv-row">
+                <!--begin::Label-->
+                <label class="d-flex align-items-center fs-6 fw-semibold mb-2">
+                  <span class="required">Project Title</span>
+  
+                </label>
+                <!--end::Label-->
+                <input type="text" class="form-control " name="project_title" />
+              </div>
+              <!--end::Input group-->
+              <!--begin::Input group-->
+              <div class="d-flex flex-column mb-8 fv-row">
+                <!--begin::Label-->
+                <label class="d-flex align-items-center fs-6 fw-semibold mb-2">
+                  <span class="required">Client Name</span>
+  
+                </label>
+                <!--end::Label-->
+                <input type="text" class="form-control " name="client_name" />
+              </div>
+              <!--end::Input group-->
+              <!--begin::Input group-->
+              <div class="d-flex flex-column mb-8 fv-row">
+                <!--begin::Label-->
+                <label class="d-flex align-items-center fs-6 fw-semibold mb-2">
+                  <span>Client Email</span>
+  
+                </label>
+                <!--end::Label-->
+                <input type="text" class="form-control " name="client_email" />
+              </div>
+              <!--end::Input group-->
+              <!--begin::Input group-->
+              <div class="d-flex flex-column mb-8 fv-row">
+                <!--begin::Label-->
+                <label class="d-flex align-items-center fs-6 fw-semibold mb-2">
+                  <span>Project Description</span>
+  
+                </label>
+                <!--end::Label-->
+                <textarea class="form-control " name="target_title" id="" cols="30" rows="5"></textarea>
+  
+              </div>
+              <!--end::Input group-->
+              <!--begin::Input group-->
+              <div class="d-flex flex-column mb-8 fv-row">
+                <!--begin::Label-->
+                <label class="d-flex align-items-center fs-6 fw-semibold mb-2">
+                  <span class="required">Address</span>
+  
+                </label>
+                <!--end::Label-->
+                <textarea class="form-control " name="target_title" id="" cols="30" rows="5"></textarea>
+              </div>
+              <!--end::Input group-->
+              <!--begin::Input group-->
+              <div class="row g-9 mb-8">
+                <!--begin::Col-->
+                <div class="col-md-6 fv-row">
+                  <label class=" fs-6 fw-semibold mb-2">Budget</label>
+                  <div class="input-group  mb-5">
+                    <span class="input-group-text bg-white">£</span>
+                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" />
+                  </div>
+                </div>
+                <!--end::Col-->
+                <!--begin::Col-->
+                <div class="col-md-6 fv-row">
+                  <label class=" fs-6 fw-semibold mb-2">Estimated Completion Date</label>
+                  <!--begin::Input-->
+                  <div class="position-relative d-flex align-items-center">
+                    <!--begin::Icon-->
+                    <i class="ki-duotone ki-calendar fs-2 position-absolute mx-4">
+                      <span class="path1"></span>
+                      <span class="path2"></span>
+                    </i>
+                    <!--end::Icon-->
+                    <!--begin::Datepicker-->
+                    <input class="form-control  ps-12 "  id="kt_datepicker_1" />
+                    <!--end::Datepicker-->
+                  </div>
+                  <!--end::Input-->
+                </div>
+                <!--end::Col-->
+              </div>
+              <!--end::Input group-->
+              <!--begin::Input group-->
+              <div class="d-flex flex-column mb-8 fv-row">
+                <!--begin::Label-->
+                <label class="d-flex align-items-center fs-6 fw-semibold mb-2">
+                  <span>Borough</span>
+  
+                </label>
+                <!--end::Label-->
+                <select class="form-select" aria-label="Select example" data-placeholder="">
+                  <option disabled selected></option>
+                  <option value="1">Karina Clark</option>
+                  <option value="2">Robert Doe</option>
+                  <option value="3">Niel Owen</option>
+                  <option value="4">Olivia Wild</option>
+                  <option value="5">Sean Bean</option>
+                </select>
+  
+              </div>
+              <!--end::Input group-->
+              <!--begin::Input group-->
+              <!--begin::Input group-->
+              <div class="d-flex flex-column mb-8 fv-row">
+                <!--begin::Label-->
+                <label class="d-flex align-items-center fs-6 fw-semibold mb-2">
+                  <span>Project Type</span>
+  
+                </label>
+                <!--end::Label-->
+                <select class="form-select" aria-label="Select example" data-placeholder="">
+                  <option disabled selected></option>
+                  <option value="1">Karina Clark</option>
+                  <option value="2">Robert Doe</option>
+                  <option value="3">Niel Owen</option>
+                  <option value="4">Olivia Wild</option>
+                  <option value="5">Sean Bean</option>
+                </select>
+              </div>
+              <!--end::Input group-->
+              <!--begin::Input group-->
+              <!--begin::Input group-->
+              <div class="d-flex flex-column mb-8 fv-row">
+                <!--begin::Label-->
+                <label class="d-flex align-items-center fs-6 fw-semibold mb-2">
+                  <span>Property Tags</span>
+  
+                </label>
+                <!--end::Label-->
+                <select class="form-select" aria-label="Select example" data-placeholder="">
+                  <option disabled selected></option>
+                  <option value="1">Karina Clark</option>
+                  <option value="2">Robert Doe</option>
+                  <option value="3">Niel Owen</option>
+                  <option value="4">Olivia Wild</option>
+                  <option value="5">Sean Bean</option>
+                </select>
+              </div>
+              <!--end::Input group-->
+              <!--begin::Input group-->
+            </div>
+  
+            <div class="modal-footer d-block ">
+              <div class="row">
+                <div class="col-6">
+                  <button type="button" class="btn btn-light rounded-0 w-100" data-bs-dismiss="modal"
+                    aria-label="Close">Close</button>
+                </div>
+                <div class="col-6">
+                  <button type="button" class="btn btn-theme-black rounded-0 w-100">Save</button>
+                </div>
+              </div>
+            </div>
+          </form>
         </div>
+      </div>
     </div>
 
     <!--end::Scrolltop-->
@@ -1958,9 +1955,20 @@
     <!-- End of Scripts -->
     <script src="assets/js/custom/project/project1.js"></script>
     <script src="assets/js/custom/project/weeks.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/plugins/monthSelect/index.js"></script>
 
     <script>
-        $("#kt_select_date").flatpickr();
+        $("#kt_datepicker_1").flatpickr(
+          { dateFormat: "Y-m",
+      altInput: false,
+      plugins: [
+        new monthSelectPlugin({
+          shorthand: true,
+          dateFormat: "Y-m",
+          altFormat: "Y-m"
+        })
+      ]}
+        );
     </script>
     <script>
         function myFunction() {

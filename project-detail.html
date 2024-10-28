@@ -4,7 +4,7 @@
 <head>
   <base href="./" />
   <title>
-    Metronic - Tailwind CSS Sign In
+      Metronic - Tailwind CSS Sign In
   </title>
   <meta charset="utf-8" />
 
@@ -14,14 +14,11 @@
   <link href="assets/media/app/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
   <link href="assets/media/app/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" />
   <!-- <link href="assets/media/app/favicon.ico" rel="shortcut icon"/> -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
-
-  <!--begin::Vendor Stylesheets(used for this page only)-->
-  <link href="assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet" />
   <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
   <link href="assets/css/styles.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/plugins/monthSelect/style.css">
-
 </head>
 
 <body id="kt_app_body" data-kt-app-layout="dark-sidebar" data-kt-app-header-fixed="true"
@@ -1493,11 +1490,43 @@
                                   <div class="col-lg-12 col-md-12 col-sm-12 mb-4">
                                     <div class="row">
                                       <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
-                                        <label class="fs-6 text-uppercase fw-semibold text-muted">Planning Required
+                                        <label class="fs-6 text-uppercase fw-semibold text-muted">Final Balance Paid
                                           ?</label>
                                       </div>
+                                      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                                           <div class="position-relative d-flex align-items-center">
+                                          <!--begin::Icon-->
+                                          <i class="ki-duotone ki-calendar fs-2 position-absolute mx-4">
+                                            <span class="path1"></span>
+                                            <span class="path2"></span>
+                                          </i>
+                                          <!--end::Icon-->
+                                          <!--begin::Datepicker-->
+                                          <input class="form-control ps-12 "
+                                            id="kt_final_balance_paid" />
+                                          <!--end::Datepicker-->
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-12 col-md-12 col-sm-12 mb-4">
+                                    <div class="row">
                                       <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
-                                        <span class="text-uppercase fw-bold fs-6 text-gray-800">Yes</span>
+                                        <label class="fs-6 text-uppercase fw-semibold text-muted">Photography Taken</label>
+                                      </div>
+                                      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                                           <div class="position-relative d-flex align-items-center">
+                                          <!--begin::Icon-->
+                                          <i class="ki-duotone ki-calendar fs-2 position-absolute mx-4">
+                                            <span class="path1"></span>
+                                            <span class="path2"></span>
+                                          </i>
+                                          <!--end::Icon-->
+                                          <!--begin::Datepicker-->
+                                          <input class="form-control ps-12 "
+                                            id="kt_phpto_taken" />
+                                          <!--end::Datepicker-->
+                                        </div>
                                       </div>
                                     </div>
                                   </div>
@@ -1523,17 +1552,7 @@
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="col-lg-12 col-md-12 col-sm-12 mb-4">
-                                    <div class="row">
-                                      <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
-                                        <label class="fs-6 text-uppercase fw-semibold text-muted">General Arrangement
-                                          Drawings</label>
-                                      </div>
-                                      <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
-                                        <span class="text-uppercase fw-bold fs-6 text-gray-800">Yes</span>
-                                      </div>
-                                    </div>
-                                  </div>
+                               
                                   <div class="col-lg-12 col-md-12 col-sm-12 mb-4">
                                     <div class="row">
                                       <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
@@ -1548,39 +1567,8 @@
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="col-lg-12 col-md-12 col-sm-12 mb-4">
-                                    <div class="row">
-                                      <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
-                                        <label class="fs-6 text-uppercase fw-semibold text-muted">Type of building
-                                          regulation apllication</label>
-                                      </div>
-                                      <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
-                                        <span class="text-uppercase fw-bold fs-6 text-gray-800">full</span>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="col-lg-12 col-md-12 col-sm-12 mb-4">
-                                    <div class="row">
-                                      <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
-                                        <label class="fs-6 text-uppercase fw-semibold text-muted">interior design
-                                          concept</label>
-                                      </div>
-                                      <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
-                                        <span class="text-uppercase fw-bold fs-6 text-gray-800">Yes</span>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="col-lg-12 col-md-12 col-sm-12 mb-4">
-                                    <div class="row">
-                                      <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
-                                        <label class="fs-6 text-uppercase fw-semibold text-muted">3D model &
-                                          visualisation</label>
-                                      </div>
-                                      <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
-                                        <span class="text-uppercase fw-bold fs-6 text-gray-800">no</span>
-                                      </div>
-                                    </div>
-                                  </div>
+                             
+                                 
                                   <div class="col-lg-12 col-md-12 col-sm-12 mb-4">
                                     <div class="row">
                                       <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
@@ -4703,7 +4691,180 @@
   <!--end::Scrolltop-->
   <!-- End of Page -->
   <!-- Scripts -->
+  <div class="modal fade" tabindex="-1" id="kt_modal_new_target">
+    <div class="modal-dialog modal-dialog-centered mw-650px">
+      <div class="modal-content">
+        <form id="kt_ecommerce_settings_general_form" class="form" action="#">
+          <div class="modal-header">
+            <h3 class="modal-title">Add New Project</h3>
+            <!--begin::Close-->
 
+            <!--end::Close-->
+          </div>
+
+          <div class="modal-body pb-4">
+            <!--begin::Input group-->
+            <div class="d-flex flex-column mb-8 fv-row">
+              <!--begin::Label-->
+              <label class="d-flex align-items-center fs-6 fw-semibold mb-2">
+                <span class="required">Project Title</span>
+
+              </label>
+              <!--end::Label-->
+              <input type="text" class="form-control " name="project_title" />
+            </div>
+            <!--end::Input group-->
+            <!--begin::Input group-->
+            <div class="d-flex flex-column mb-8 fv-row">
+              <!--begin::Label-->
+              <label class="d-flex align-items-center fs-6 fw-semibold mb-2">
+                <span class="required">Client Name</span>
+
+              </label>
+              <!--end::Label-->
+              <input type="text" class="form-control " name="client_name" />
+            </div>
+            <!--end::Input group-->
+            <!--begin::Input group-->
+            <div class="d-flex flex-column mb-8 fv-row">
+              <!--begin::Label-->
+              <label class="d-flex align-items-center fs-6 fw-semibold mb-2">
+                <span>Client Email</span>
+
+              </label>
+              <!--end::Label-->
+              <input type="text" class="form-control " name="client_email" />
+            </div>
+            <!--end::Input group-->
+            <!--begin::Input group-->
+            <div class="d-flex flex-column mb-8 fv-row">
+              <!--begin::Label-->
+              <label class="d-flex align-items-center fs-6 fw-semibold mb-2">
+                <span>Project Description</span>
+
+              </label>
+              <!--end::Label-->
+              <textarea class="form-control " name="target_title" id="" cols="30" rows="5"></textarea>
+
+            </div>
+            <!--end::Input group-->
+            <!--begin::Input group-->
+            <div class="d-flex flex-column mb-8 fv-row">
+              <!--begin::Label-->
+              <label class="d-flex align-items-center fs-6 fw-semibold mb-2">
+                <span class="required">Address</span>
+
+              </label>
+              <!--end::Label-->
+              <textarea class="form-control " name="target_title" id="" cols="30" rows="5"></textarea>
+            </div>
+            <!--end::Input group-->
+            <!--begin::Input group-->
+            <div class="row g-9 mb-8">
+              <!--begin::Col-->
+              <div class="col-md-6 fv-row">
+                <label class=" fs-6 fw-semibold mb-2">Budget</label>
+                <div class="input-group  mb-5">
+                  <span class="input-group-text bg-white">£</span>
+                  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" />
+                </div>
+              </div>
+              <!--end::Col-->
+              <!--begin::Col-->
+              <div class="col-md-6 fv-row">
+                <label class=" fs-6 fw-semibold mb-2">Estimated Completion Date</label>
+                <!--begin::Input-->
+                <div class="position-relative d-flex align-items-center">
+                  <!--begin::Icon-->
+                  <i class="ki-duotone ki-calendar fs-2 position-absolute mx-4">
+                    <span class="path1"></span>
+                    <span class="path2"></span>
+                  </i>
+                  <!--end::Icon-->
+                  <!--begin::Datepicker-->
+                  <input class="form-control  ps-12 "  id="kt_datepicker_ecd" />
+                  <!--end::Datepicker-->
+                </div>
+                <!--end::Input-->
+              </div>
+              <!--end::Col-->
+            </div>
+            <!--end::Input group-->
+            <!--begin::Input group-->
+            <div class="d-flex flex-column mb-8 fv-row">
+              <!--begin::Label-->
+              <label class="d-flex align-items-center fs-6 fw-semibold mb-2">
+                <span>Borough</span>
+
+              </label>
+              <!--end::Label-->
+              <select class="form-select" aria-label="Select example" data-placeholder="">
+                <option disabled selected></option>
+                <option value="1">Karina Clark</option>
+                <option value="2">Robert Doe</option>
+                <option value="3">Niel Owen</option>
+                <option value="4">Olivia Wild</option>
+                <option value="5">Sean Bean</option>
+              </select>
+
+            </div>
+            <!--end::Input group-->
+            <!--begin::Input group-->
+            <!--begin::Input group-->
+            <div class="d-flex flex-column mb-8 fv-row">
+              <!--begin::Label-->
+              <label class="d-flex align-items-center fs-6 fw-semibold mb-2">
+                <span>Project Type</span>
+
+              </label>
+              <!--end::Label-->
+              <select class="form-select" aria-label="Select example" data-placeholder="">
+                <option disabled selected></option>
+                <option value="1">Karina Clark</option>
+                <option value="2">Robert Doe</option>
+                <option value="3">Niel Owen</option>
+                <option value="4">Olivia Wild</option>
+                <option value="5">Sean Bean</option>
+              </select>
+            </div>
+            <!--end::Input group-->
+            <!--begin::Input group-->
+            <!--begin::Input group-->
+            <div class="d-flex flex-column mb-8 fv-row">
+              <!--begin::Label-->
+              <label class="d-flex align-items-center fs-6 fw-semibold mb-2">
+                <span>Property Tags</span>
+
+              </label>
+              <!--end::Label-->
+              <select class="form-select" aria-label="Select example" data-placeholder="">
+                <option disabled selected></option>
+                <option value="1">Karina Clark</option>
+                <option value="2">Robert Doe</option>
+                <option value="3">Niel Owen</option>
+                <option value="4">Olivia Wild</option>
+                <option value="5">Sean Bean</option>
+              </select>
+            </div>
+            <!--end::Input group-->
+            <!--begin::Input group-->
+          </div>
+
+          <div class="modal-footer d-block ">
+            <div class="row">
+              <div class="col-6">
+                <button type="button" class="btn btn-light rounded-0 w-100" data-bs-dismiss="modal"
+                  aria-label="Close">Close</button>
+              </div>
+              <div class="col-6">
+                <button type="button" class="btn btn-theme-black rounded-0 w-100">Save</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
   <!--begin::Global Javascript Bundle(mandatory for all pages)-->
 
   <script src="assets/plugins/global/plugins.bundle.js"></script>
@@ -4718,93 +4879,36 @@
   <!--begin::Custom Javascript(used for this page only)-->
   <script>
     $("#kt_datepicker_1").flatpickr({
-      
-      dateFormat: "Y-m",
-      altInput: false,
-      plugins: [
-        new monthSelectPlugin({
-          shorthand: true,
-          dateFormat: "Y-m",
-          altFormat: "Y-m"
-        })
-      ]
+      info: false,
+      lengthChange: false,
     });
     $("#kt_datepicker_2").flatpickr({
-      dateFormat: "Y-m",
-      altInput: false,
-      plugins: [
-        new monthSelectPlugin({
-          shorthand: true,
-          dateFormat: "Y-m",
-          altFormat: "Y-m"
-        })
-      ]
+      info: false,
+      lengthChange: false,
     });
     $("#kt_datepicker_3").flatpickr({
-      dateFormat: "Y-m",
-      altInput: false,
-      plugins: [
-        new monthSelectPlugin({
-          shorthand: true,
-          dateFormat: "Y-m",
-          altFormat: "Y-m"
-        })
-      ]
+      info: false,
+      lengthChange: false,
     });
     $("#kt_datepicker_4").flatpickr({
-      dateFormat: "Y-m",
-      altInput: false,
-      plugins: [
-        new monthSelectPlugin({
-          shorthand: true,
-          dateFormat: "Y-m",
-          altFormat: "Y-m"
-        })
-      ]
+      info: false,
+      lengthChange: false,
     });
     $("#kt_datepicker_5").flatpickr({
-      dateFormat: "Y-m",
-      altInput: false,
-      plugins: [
-        new monthSelectPlugin({
-          shorthand: true,
-          dateFormat: "Y-m",
-          altFormat: "Y-m"
-        })
-      ]
+      info: false,
+      lengthChange: false,
     });
     $("#kt_datepicker_6").flatpickr({
-      dateFormat: "Y-m",
-      altInput: false,
-      plugins: [
-        new monthSelectPlugin({
-          shorthand: true,
-          dateFormat: "Y-m",
-          altFormat: "Y-m"
-        })
-      ]
+      info: false,
+      lengthChange: false,
     });
     $("#kt_datepicker_7").flatpickr({
-      dateFormat: "Y-m",
-      altInput: false,
-      plugins: [
-        new monthSelectPlugin({
-          shorthand: true,
-          dateFormat: "Y-m",
-          altFormat: "Y-m"
-        })
-      ]
+      info: false,
+      lengthChange: false,
     });
     $("#kt_datepicker_8").flatpickr({
-      dateFormat: "Y-m",
-      altInput: false,
-      plugins: [
-        new monthSelectPlugin({
-          shorthand: true,
-          dateFormat: "Y-m",
-          altFormat: "Y-m"
-        })
-      ]
+      info: false,
+      lengthChange: false,
     });
     $("#kt_datepicker_esti_date").flatpickr({
       info: false,
@@ -4834,6 +4938,26 @@
       info: false,
       lengthChange: false
     });
+    $("#kt_final_balance_paid").flatpickr({
+      info: false,
+      lengthChange: false
+    });
+    $("#kt_phpto_taken").flatpickr({
+      info: false,
+      lengthChange: false
+    });
+    $("# kt_datepicker_ecd").flatpickr({
+      dateFormat: "Y-m",
+      altInput: false,
+      plugins: [
+        new monthSelectPlugin({
+          shorthand: true,
+          dateFormat: "Y-m",
+          altFormat: "Y-m"
+        })
+      ]
+    });
+   
   </script>
   <script>
     var myDropzone = new Dropzone("#kt_dropzonejs_example_1", {
