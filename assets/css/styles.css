@@ -130,6 +130,7 @@
   --bs-theme-black-border: #282728;
 --bs-theme-black-active: #1a1a1a;
 --bs-theme-black-box-shadow: 0px 4px 12px 0px rgba(36, 36, 36, 0.35);
+--bs-text-theme-black:#121212;
 }
 
 [data-bs-theme=dark] {
@@ -804,6 +805,7 @@ progress {
   .container-sm {
     max-width: 960px
   }
+ 
 }
 
 @media (min-width:1200px) {
@@ -814,6 +816,9 @@ progress {
   .container-sm,
   .container-xl {
     max-width: 1140px
+  }
+  .md-lg-0{
+    margin-bottom: 0px !important;
   }
 }
 
@@ -2642,6 +2647,9 @@ progress {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch
   }
+  .grid-container.list-view .img-box{
+    width: 100% !important;
+  }
 }
 
 @media (max-width:767.98px) {
@@ -2649,13 +2657,29 @@ progress {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch
   }
+  .grid-container.list-view .listing li .badge{
+     margin-bottom: 10px;
+   
+  }
+  .grid-container.list-view .listing li .badge:last-child{
+    margin-bottom: 0px !important;
+  }
+  .grid-container.list-view .custome-flex-wrape{
+ 
+    flex-wrap:  wrap  !important;
+  }
+  .grid-container.list-view .custome-flex-wrape .custom-width-box {
+    width: 100% !important;
+  }
 }
+
 
 @media (max-width:991.98px) {
   .table-responsive-lg {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch
   }
+ 
 }
 
 @media (max-width:1199.98px) {
@@ -2663,6 +2687,7 @@ progress {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch
   }
+ 
 }
 
 @media (max-width:1399.98px) {
@@ -9011,6 +9036,9 @@ fieldset:disabled .btn {
 .w-125px {
   width: 125px !important
 }
+.w-145px {
+  width: 145px !important
+}
 
 .w-150px {
   width: 150px !important
@@ -9498,6 +9526,9 @@ fieldset:disabled .btn {
 
 .h-125px {
   height: 125px !important
+}
+.h-145px{
+  height:  145px !important;
 }
 
 .h-150px {
@@ -41688,8 +41719,8 @@ h6 {
 .btn.btn-active-theme-black:focus:not(.btn-active),
 .btn.btn-active-theme-black:hover:not(.btn-active),
 .show>.btn.btn-active-theme-black {
-  color: var(--bs-theme-black);
-  border-color: var(--bs-theme-black-light);
+  color: var(--bs-white);
+  border-color: var(--bs-theme-black);
   background-color: var(--bs-theme-black-light) !important
 }
 
@@ -55379,6 +55410,10 @@ code:not([class*=language-]).code-dark {
   background-color: var(--bs-dark-light);
   color: var(--bs-dark)
 }
+.badge-theme-black {
+  background-color: var(--bs-dark-light);
+  color: var(--bs-theme-black)
+}
 
 .indicator-progress {
   display: none
@@ -63629,4 +63664,197 @@ body {
 }
 .table-middle-text table{
   border-top: 2px solid #E1E1E1;
+}
+
+.check-theme-black.form-switch .form-check-input[type=checkbox]:checked{
+  background-color:  var(--bs-gray-700);
+  border-color: var(--bs-gray-700);
+}
+.mw-90{
+  width: 90%;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input.placeholder-black{
+  background-color: var(--bs-gray-300) !important;
+}
+input.placeholder-black::placeholder{
+  color: #000;
+}
+.custome-select-box i{
+   top:15px;
+   left: 15px;
+   font-size: 15  px;
+}
+.grid-container .card  .card-img-top{
+  border-radius: 15px !important;
+}
+.list-view .row > [class*='columns'] {
+  max-width: 100%;
+  flex: 0 0 100%;
+}
+.list-view .card {
+  flex-direction: row;
+}
+.list-view .card-detail-box{
+  margin-left: 23px !important;
+}
+@media (max-width: 575.98px) {
+  .list-view .card {
+    flex-direction: column;
+ }
+}
+.list-view .card > .card-img-top {
+  width: auto;
+ 
+}
+
+.list-view .card .card-body {
+  display: inline-block;
+}
+.listing{
+  padding: 0px;
+  margin: 0px;
+}
+.listing li{
+  list-style: none;
+}
+.listing.line li{
+  display:  inline-block;
+}
+
+.grid-container .badge.active{
+  background-color:var(--bs-theme-black);
+  color:var(--bs-white)
+}
+
+.grid-container .listing-d-none,.grid-container.list-view  .listing-d-block{
+  display: none;
+}
+
+.grid-container .listing li .badge{
+  display: none;
+}
+ .listing li .badge.active{
+  display: block;
+  background-color: var(--bs-theme-black);
+  color: var(--bs-text-white);
+}
+.grid-container .listing li:nth-child(2){
+  order:1;
+}
+.grid-container .listing li:first-child{
+  order:2;
+}
+.grid-container .listing li:last-child{
+  order:3;
+}
+
+
+.grid-container.list-view  .listing-d-none{
+  display: flex;
+}
+.grid-container.list-view .columns{
+  margin-bottom: 0px !important;
+}
+.grid-container.list-view .card-detail-box:first-child{
+  width: 40%;
+}
+.grid-container.list-view .card-detail-box:last-child{
+  width: 60%;
+ 
+}
+.grid-container.list-view .listing li .badge{
+  display: flex;
+ 
+}
+.grid-container.list-view .listing li .badge.active{
+  display: flex;
+}
+.grid-container.list-view .listing li:nth-child(2){
+  order:2;
+}
+.grid-container.list-view .listing li:first-child{
+  order:1;
+}
+.grid-container.list-view .listing li:last-child{
+  order:3;
+}
+.grid-container .img-box{
+  width: 100%;
+  height: 301px;
+    overflow: hidden;
+    border-radius: 15px;
+    object-fit: cover;
+  object-position: center;
+   
+}
+.grid-container .img-box img{
+  object-fit: cover;
+  object-position: center;
+ 
+}
+.grid-container.list-view .img-box{
+  width: 322px;
+  margin-right: 10px !important;
+  height: 230px;
+}
+.grid-container.list-view .bottom-listing-view{
+  padding-left: 15px;
+  margin-top:15px;  
+}
+.auto-img-box img{
+  object-fit: cover;
+}
+
+.pp-card {
+  position: relative;
+  width: 125px;
+  border-radius: 10px;
+  overflow: visible;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f5f5f5;
+}
+
+.pp-img {
+width: 125px;
+  height: 125px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.pp-icon-circle {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.pp-edit-icon {
+  top: -15px;
+  right: -15px;
+}
+
+.pp-delete-icon {
+  bottom: -15px;
+  right: -15px;
+}
+
+#projectImagesDropzone {
+    max-height: 312px;
+    overflow-y: auto;
+    border: 2px dashed #999999;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+.accordion_rounded .accordion-item,.accordion_rounded .accordion-item .accordion-button{
+  border-radius: 8px !important;
 }
